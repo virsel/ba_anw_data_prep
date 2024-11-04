@@ -1,0 +1,1 @@
+[INFO]2024-11-04 15:58:03,389 data_integrate.py:483: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]

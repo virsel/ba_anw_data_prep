@@ -18,6 +18,7 @@ from drain3.template_miner_config import TemplateMinerConfig
 
 log_path = dirname(__file__) + '/log/' + str(datetime.datetime.now().strftime(
     '%Y-%m-%d')) + '_nezha.log'
+os.makedirs(os.path.dirname(log_path), exist_ok=True)
 logger = Logger(log_path, logging.DEBUG, __name__).getlog()
 
 

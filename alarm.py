@@ -18,7 +18,7 @@ log_path = dirname(__file__) + '/log/' + str(datetime.datetime.now().strftime(
 logger = Logger(log_path, logging.DEBUG, __name__).getlog()
 
 
-metric_threshold_dir = "metric_threshold"
+metric_threshold_dir = "input/metric_threshold"
 
 
 def get_svc(path):
@@ -148,7 +148,7 @@ def get_netwrok_metric(trace_file, pod_name):
         return 10, 10
 
 
-def determine_alarm(pod, metric_type, metric_value, std_num, ns):
+def determine_alarm(pod, metric_type, metric_value, std_num):
     """
     fun determine_alarm: determin whether violate 3-sgima
     :parameter
@@ -167,15 +167,9 @@ def determine_alarm(pod, metric_type, metric_value, std_num, ns):
         if metric_value > 80:
             return True
     else:
+        if metric_value > 200:
+            return True
 
-        if ns == "hipster":
-            # for hipster
-            if metric_value > 200:
-                return True
-        elif ns == "ts":
-            # for ts
-            if metric_value > 300:
-                return True
     return False
     # for path in path_list:
     #     if re.search(path.split('.')[0], pod):
@@ -189,7 +183,7 @@ def determine_alarm(pod, metric_type, metric_value, std_num, ns):
     #             return False
 
 
-def generate_alarm(metric_list, ns, std_num=6):
+def generate_alarm(metric_list, std_num=6):
     """
     func generate_alarm:  generate alram of each pod at current miniute
     :parameter
@@ -212,7 +206,7 @@ def generate_alarm(metric_list, ns, std_num=6):
         alarm = {}
         for i in range(len(pod_metric['metrics'])):
             alarm_flag = determine_alarm(pod=pod_metric["pod"], metric_type=pod_metric['metrics'][i]["metric_type"],
-                                         metric_value=pod_metric['metrics'][i]["metric_value"], std_num=std_num, ns=ns)
+                                         metric_value=pod_metric['metrics'][i]["metric_value"], std_num=std_num)
             if alarm_flag:
                 # if exist alarm_flag equal to true, create map
                 if "pod" not in alarm:

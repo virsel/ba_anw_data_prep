@@ -16,12 +16,16 @@ from alarm import *
 import pdb
 import re
 import tqdm
+import os
 
 import concurrent.futures
+
+NUM_WORKERS = psutil.cpu_count(logical=False)
 
 
 log_path = dirname(__file__) + '/log/' + str(datetime.datetime.now().strftime(
     '%Y-%m-%d')) + '_nezha.log'
+os.makedirs(os.path.dirname(log_path), exist_ok=True)
 logger = Logger(log_path, logging.DEBUG, __name__).getlog()
 
 
@@ -466,7 +470,7 @@ def generate_event_graph(trace, log_template_miner):
     return event_graph
 
 
-def data_integrate(trace_file, trace_id_file, log_file, alarm_list, ns,log_template_miner):
+def data_integrate(trace_file, trace_id_file, log_file, alarm_list, log_template_miner):
     """
     func data_integrate: integrate multimodle data to event graph
     :parameter
@@ -501,9 +505,9 @@ def data_integrate(trace_file, trace_id_file, log_file, alarm_list, ns,log_templ
     # graph = generate_event_graph(trace)
     # event_graphs.append(graph)
 
-    with concurrent.futures.ProcessPoolExecutor(max_workers=64) as executor1:
+    with concurrent.futures.ProcessPoolExecutor(max_workers=NUM_WORKERS) as executor1:
         futures1 = {executor1.submit(
-            get_events_within_trace, trace_reader, log_reader, traceid, alarm_list, ns,log_template_miner) for traceid in trace_id_reader[0]}
+            get_events_within_trace, trace_reader, log_reader, traceid, alarm_list,log_template_miner) for traceid in trace_id_reader[0]}
 
         for future1 in concurrent.futures.as_completed(futures1):
             trace = future1.result()
@@ -511,7 +515,7 @@ def data_integrate(trace_file, trace_id_file, log_file, alarm_list, ns,log_templ
                 log_sequences.append(trace)
         executor1.shutdown()
 
-    with concurrent.futures.ProcessPoolExecutor(max_workers=64) as executor2:
+    with concurrent.futures.ProcessPoolExecutor(max_workers=NUM_WORKERS) as executor2:
         futures2 = {executor2.submit(
             generate_event_graph, trace,log_template_miner) for trace in log_sequences}
 

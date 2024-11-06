@@ -4,13 +4,14 @@ from pattern_miner import *
 import pdb
 import time
 import tqdm
+from config import Config
 
 log_path = dirname(__file__) + '/log/' + str(datetime.datetime.now().strftime(
     '%Y-%m-%d')) + '_nezha.log'
 logger = Logger(log_path, logging.DEBUG, __name__).getlog()
 
 
-def get_pattern(detete_time, ns, data_path, log_template_miner,topk=30):
+def get_pattern(detete_time, data_path, log_template_miner,topk=30):
     """
     func get_pattern: get pattern at the detete_time
     :parameter
@@ -33,11 +34,11 @@ def get_pattern(detete_time, ns, data_path, log_template_miner,topk=30):
         "/log/" + str(hour) + "_" + str(min) + "_log.csv"
 
     metric_list = get_metric_with_time(detete_time, data_path)
-    alarm_list = generate_alarm(metric_list, ns)
+    alarm_list = generate_alarm(metric_list)
     # print(alarm_list)
     # alarm_list = {}
     event_graphs = data_integrate(
-        trace_file, trace_id_file, log_file, alarm_list,ns,log_template_miner)
+        trace_file, trace_id_file, log_file, alarm_list, log_template_miner)
     # file_name = generate_tkg_input(event_graphs)
     # pattern_list = frequent_graph_miner(file_name, topk=topk)
     result_support_list = get_pattern_support(event_graphs)
@@ -89,9 +90,9 @@ def abnormal_pattern_ranker(normal_pattern_dict, abnormal_pattern_dict, min_scor
     return score_dict
 
 
-def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, ns, log_template_miner,topk=10, min_score=0.67):
-    rca_path = dirname(__file__) +  "/rca_data"
-    abnormal_pattern_dict, _, alarm_list = get_pattern(abnormal_time, ns, rca_path,log_template_miner)
+def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, log_template_miner,topk=10, min_score=0.67):
+    rca_path = Config.fault_suffering_data_path
+    abnormal_pattern_dict, _, alarm_list = get_pattern(abnormal_time, rca_path,log_template_miner)
     abnormal_pattern_score = abnormal_pattern_ranker(
         normal_pattern_dict, abnormal_pattern_dict, min_score)
     score_dict = {}
@@ -197,31 +198,30 @@ def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, ns, 
     return result_list, abnormal_pattern_score
 
 
-def evaluation(normal_time_list, fault_inject_list, ns,log_template_miner):
+def evaluation(normal_time_list, fault_inject_list,log_template_miner):
     """
     func evaluation: evaluate nezha's precision in inner-service level
     para:
     - normal_time_list:  list of normal construction time
     - fault_inject_list: list of ground truth
-    - ns: namespace of microservice
     return:
     nezha's precision
     """
     fault_number = 0
     top_list = []
-    construction_data_path = dirname(__file__) +  "/construct_data"
+    fault_free_data_path = Config.fault_free_data_path
 
     for i in range(len(fault_inject_list)):
         ground_truth_path = fault_inject_list[i]
         normal_time = normal_time_list[i]
        
         normal_pattern_list, normal_event_graphs, normal_alarm_list = get_pattern(
-            normal_time, ns, construction_data_path,log_template_miner)
+            normal_time, fault_free_data_path,log_template_miner)
         f = open(ground_truth_path)
         fault_inject_data = json.load(f)
         f.close()
 
-        root_cause_file = construction_data_path + "/root_cause_" + ns + ".json"
+        root_cause_file = fault_free_data_path + "/root_cause.json"
 
         root_cause_lit_file = open(root_cause_file)
         root_cause_list = json.load(root_cause_lit_file)
@@ -249,7 +249,7 @@ def evaluation(normal_time_list, fault_inject_list, ns,log_template_miner):
                     abnormal_time = fault["inject_time"].split(
                         ":")[0] + ":" + str(min)
                 result_list, abnormal_pattern_score = pattern_ranker(
-                    normal_pattern_list, normal_event_graphs, abnormal_time, ns,log_template_miner)
+                    normal_pattern_list, normal_event_graphs, abnormal_time,log_template_miner)
 
                 logger.info("%s Inject RCA Result:", fault["inject_time"])
                 logger.info("%s Inject Ground Truth: %s, %s",
@@ -334,7 +334,7 @@ def evaluation(normal_time_list, fault_inject_list, ns,log_template_miner):
             top1 += 1
         all_num += num
 
-    logger.info('-------- %s Fault numbuer : %s-------', ns,fault_number)
+    logger.info('-------- %s Fault numbuer : %s-------',fault_number)
     logger.info('--------AIS@1 Result-------')
     logger.info("%f %%" % (top1/fault_number * 100))
     logger.info('--------AIS@3 Result-------')
@@ -345,13 +345,12 @@ def evaluation(normal_time_list, fault_inject_list, ns,log_template_miner):
     # logger.info("%f" % (all_num/fault_number))
 
 
-def evaluation_min_score(normal_time_list, fault_inject_list, ns,log_template_miner):
+def evaluation_min_score(normal_time_list, fault_inject_list,log_template_miner):
     """
     func evaluation: evaluate nezha's precision in inner-service level when assign different  min_score
     para:
     - normal_time_list:  list of normal construction time
     - fault_inject_list: list of ground truth
-    - ns: namespace of microservice
     return:
     nezha's precision
     """
@@ -366,12 +365,12 @@ def evaluation_min_score(normal_time_list, fault_inject_list, ns,log_template_mi
             normal_time = normal_time_list[i]
 
             normal_pattern_list, normal_event_graphs, normal_alarm_list = get_pattern(
-                normal_time, ns, construction_data_path,log_template_miner)
+                normal_time, construction_data_path,log_template_miner)
             f = open(ground_truth_path)
             fault_inject_data = json.load(f)
             f.close()
 
-            root_cause_file = construction_data_path + "/root_cause_" + ns + ".json"
+            root_cause_file = construction_data_path + "/root_cause.json"
 
             root_cause_lit_file = open(root_cause_file)
             root_cause_list = json.load()
@@ -401,7 +400,7 @@ def evaluation_min_score(normal_time_list, fault_inject_list, ns,log_template_mi
                     # logger.info("%s Inject Ground Truth: %s, %s, %s", fault["inject_time"],
                     #             fault["inject_pod"], fault["inject_type"], fault["root_cause"])
                     result_list, abnormal_pattern_score = pattern_ranker(
-                        normal_pattern_list, normal_event_graphs, abnormal_time, min_score=min_score, ns=ns, log_template_miner=log_template_miner)
+                        normal_pattern_list, normal_event_graphs, abnormal_time, min_score=min_score, log_template_miner=log_template_miner)
 
                     # root_cause = fault["root_cause"].split("_")
                     logger.info("%s Inject RCA Result:", fault["inject_time"])
@@ -474,7 +473,7 @@ def evaluation_min_score(normal_time_list, fault_inject_list, ns,log_template_mi
             all_num += num
 
         logger.info("Min Score %f result" % (min_score))
-        logger.info('-------- %s Fault numbuer : %s-------', ns,fault_number)
+        logger.info('-------- %s Fault numbuer : %s-------',fault_number)
         logger.info('--------R@1 Result-------')
         logger.info("%f %%" % (top1/fault_number * 100))
         logger.info('--------R@3 Result-------')
@@ -485,13 +484,12 @@ def evaluation_min_score(normal_time_list, fault_inject_list, ns,log_template_mi
         logger.info("%f" % (all_num/fault_number))
 
 
-def evaluation_pod(normal_time_list, fault_inject_list, ns,log_template_miner):
+def evaluation_pod(normal_time_list, fault_inject_list, log_template_miner):
     """
     func evaluation: evaluate nezha's precision in pod-service level
     para:
     - normal_time_list:  list of normal construction time
     - fault_inject_list: list of ground truth
-    - ns: namespace of microservice
     return:
     nezha's precision 
     """
@@ -504,12 +502,12 @@ def evaluation_pod(normal_time_list, fault_inject_list, ns,log_template_miner):
         normal_time = normal_time_list[i]
 
         normal_pattern_list, normal_event_graphs, normal_alarm_list = get_pattern(
-            normal_time, ns, construction_data_path,log_template_miner)
+            normal_time, construction_data_path,log_template_miner)
         f = open(ground_truth_path)
         fault_inject_data = json.load(f)
         f.close()
 
-        root_cause_file = construction_data_path + "/root_cause_" + ns + ".json"
+        root_cause_file = construction_data_path + "/root_cause.json"
         
         root_cause_lit_file = open(root_cause_file)
         root_cause_list = json.load(root_cause_lit_file)
@@ -539,7 +537,7 @@ def evaluation_pod(normal_time_list, fault_inject_list, ns,log_template_miner):
                 # logger.info("%s Inject Ground Truth: %s, %s, %s", fault["inject_time"],
                 #             fault["inject_pod"], fault["inject_type"], fault["root_cause"])
                 result_list, abnormal_pattern_score = pattern_ranker(
-                    normal_pattern_list, normal_event_graphs, abnormal_time, ns, log_template_miner)
+                    normal_pattern_list, normal_event_graphs, abnormal_time, log_template_miner)
 
                 # root_cause = fault["root_cause"].split("_")
                 logger.info("%s Inject RCA Pod Result:", fault["inject_time"])
@@ -613,7 +611,7 @@ def evaluation_pod(normal_time_list, fault_inject_list, ns,log_template_miner):
         if num == 1:
             top1 += 1
         all_num += num
-    logger.info('-------- %s Fault numbuer : %s-------', ns,fault_number)
+    logger.info('-------- %s Fault numbuer : %s-------',fault_number)
     logger.info('--------AS@1 Result-------')
     logger.info("%f %%" % (top1/fault_number * 100))
     logger.info('--------AS@3 Result-------')
@@ -631,10 +629,10 @@ def evaluation_time(ns="hipster"):
     abnormal_time = "2023-01-29 08:52"
 
     normal_pattern_list, normal_event_graphs, normal_alarm_list = get_pattern(
-        normal_time, ns, construction_data_path)
+        normal_time, construction_data_path)
     start_time = time.time()
     result_list, abnormal_pattern_score = pattern_ranker(
-        normal_pattern_list, normal_event_graphs, abnormal_time, ns)
+        normal_pattern_list, normal_event_graphs, abnormal_time)
     print(time.time()-start_time)
 
 
@@ -673,7 +671,7 @@ if __name__ == '__main__':
 
     inject_list = [path2]
     normal_time_list = [normal_time2]
-    evaluation(normal_time_list, inject_list, ns,template_miner)
+    evaluation(normal_time_list, inject_list,template_miner)
     # evaluation_pod(normal_time_list, inject_list, ns)
     # evaluation_min_score(normal_time_list, inject_list, ns)
 

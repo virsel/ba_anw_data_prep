@@ -1,0 +1,862 @@
+[INFO]2024-11-05 18:39:01,019 data_integrate.py:472: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-05 18:39:19,284 data_integrate.py:541: Data Integrate Complete!
+[INFO]2024-11-05 18:39:19,326 data_integrate.py:184: head:76 frontend hipstershop.Frontend/Recv. start
+[INFO]2024-11-05 18:39:19,326 data_integrate.py:187: tail:1 TraceID: <:TRACEID:> SpanID: <:SPANID:> Request complete
+[INFO]2024-11-05 18:39:19,326 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:184: head:1 TraceID: <:TRACEID:> SpanID: <:SPANID:> Request complete
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:187: tail:37 TraceID: <:TRACEID:> SpanID: <:SPANID:> View user cart complete
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:184: head:37 TraceID: <:TRACEID:> SpanID: <:SPANID:> View user cart complete
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:187: tail:38 TraceID: <:TRACEID:> SpanID: <:SPANID:> View user cart start
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:184: head:38 TraceID: <:TRACEID:> SpanID: <:SPANID:> View user cart start
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:187: tail:4 TraceID: <:TRACEID:> SpanID: <:SPANID:> Request started
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:184: head:4 TraceID: <:TRACEID:> SpanID: <:SPANID:> Request started
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:187: tail:77 frontend hipstershop.Frontend/Recv. end
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:184: head:80 frontend hipstershop.CurrencyService/GetSupportedCurrencies start
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:187: tail:81 frontend hipstershop.CurrencyService/GetSupportedCurrencies end
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:187: tail:98 currencyservice grpc.hipstershop.CurrencyService/GetSupportedCurrencies start
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:184: head:82 frontend hipstershop.CartService/GetCart start
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:187: tail:83 frontend hipstershop.CartService/GetCart end
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:187: tail:102 cartservice hipstershop.CartService/GetCart start
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:184: head:86 frontend hipstershop.RecommendationService/ListRecommendations start
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:187: tail:87 frontend hipstershop.RecommendationService/ListRecommendations end
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:187: tail:108 recommendationservice /hipstershop.RecommendationService/ListRecommendations start
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,329 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,339 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,339 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,339 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,340 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,340 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,341 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,341 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,341 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,342 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,342 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,343 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,343 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,343 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:184: head:124 frontend hipstershop.ShippingService/GetQuote start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:125 frontend hipstershop.ShippingService/GetQuote end
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:126 shippingservice hipstershop.ShippingService/GetQuote start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:184: head:84 frontend hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:85 frontend hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:184: head:84 frontend hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:85 frontend hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:184: head:84 frontend hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:85 frontend hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,345 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,356 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,356 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,356 data_integrate.py:184: head:84 frontend hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:85 frontend hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:184: head:84 frontend hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:85 frontend hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:184: head:84 frontend hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:85 frontend hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:184: head:98 currencyservice grpc.hipstershop.CurrencyService/GetSupportedCurrencies start
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:24 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting supported currencies...
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:184: head:24 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting supported currencies...
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:99 currencyservice grpc.hipstershop.CurrencyService/GetSupportedCurrencies end
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:184: head:100 currencyservice hipstershop.CurrencyService/GetCurrencyData start
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:184: head:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:184: head:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:187: tail:101 currencyservice hipstershop.CurrencyService/GetCurrencyData end
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,357 data_integrate.py:184: head:102 cartservice hipstershop.CartService/GetCart start
+[INFO]2024-11-05 18:39:19,373 data_integrate.py:187: tail:25 TraceID: <:TRACEID:> SpanID: <:SPANID:> GetCartAsync called with userId=<:USERID:>
+[INFO]2024-11-05 18:39:19,373 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,375 data_integrate.py:184: head:25 TraceID: <:TRACEID:> SpanID: <:SPANID:> GetCartAsync called with userId=<:USERID:>
+[INFO]2024-11-05 18:39:19,376 data_integrate.py:187: tail:103 cartservice hipstershop.CartService/GetCart end
+[INFO]2024-11-05 18:39:19,377 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,377 data_integrate.py:184: head:108 recommendationservice /hipstershop.RecommendationService/ListRecommendations start
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:187: tail:6 TraceID: <:TRACEID:> SpanID: <:SPANID:> List Recommendations product ids=<:ITEM:>
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:184: head:6 TraceID: <:TRACEID:> SpanID: <:SPANID:> List Recommendations product ids=<:ITEM:>
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:187: tail:7 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query Recommendations
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:184: head:7 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query Recommendations
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:187: tail:109 recommendationservice /hipstershop.RecommendationService/ListRecommendations end
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:184: head:110 recommendationservice /hipstershop.ProductCatalogService/ListProducts start
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:187: tail:111 recommendationservice /hipstershop.ProductCatalogService/ListProducts end
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:187: tail:92 productcatalogservice hipstershop.ProductCatalogService/ListProducts start
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:184: head:92 productcatalogservice hipstershop.ProductCatalogService/ListProducts start
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:187: tail:9 TraceID: <:TRACEID:> SpanID: <:SPANID:> List products end
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:184: head:9 TraceID: <:TRACEID:> SpanID: <:SPANID:> List products end
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:187: tail:14 TraceID: <:TRACEID:> SpanID: <:SPANID:> Start list products
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:184: head:14 TraceID: <:TRACEID:> SpanID: <:SPANID:> Start list products
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:187: tail:93 productcatalogservice hipstershop.ProductCatalogService/ListProducts end
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,378 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,389 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,389 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,389 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,390 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,390 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,391 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:112 productcatalogservice hipstershop.ProductCatalogService/ParseCatalog start
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:10 TraceID: <:TRACEID:> SpanID: <:SPANID:> Parse catalog successfully
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:10 TraceID: <:TRACEID:> SpanID: <:SPANID:> Parse catalog successfully
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:13 TraceID: <:TRACEID:> SpanID: <:SPANID:> Start parse catalog
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:13 TraceID: <:TRACEID:> SpanID: <:SPANID:> Start parse catalog
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:113 productcatalogservice hipstershop.ProductCatalogService/ParseCatalog end
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:114 productcatalogservice hipstershop.ProductCatalogService/ReadCatalog start
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,406 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,421 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,421 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,421 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,422 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,422 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:12 TraceID: <:TRACEID:> SpanID: <:SPANID:> Start query product catalog
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:12 TraceID: <:TRACEID:> SpanID: <:SPANID:> Start query product catalog
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:115 productcatalogservice hipstershop.ProductCatalogService/ReadCatalog end
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,424 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 18:39:19,439 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,440 data_integrate.py:184: head:126 shippingservice hipstershop.ShippingService/GetQuote start
+[INFO]2024-11-05 18:39:19,456 data_integrate.py:187: tail:29 TraceID: <:TRACEID:> SpanID: <:SPANID:>[GetQuote] completed request
+[INFO]2024-11-05 18:39:19,456 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:29 TraceID: <:TRACEID:> SpanID: <:SPANID:>[GetQuote] completed request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:36 TraceID: <:TRACEID:> SpanID: <:SPANID:>[GetQuote] received request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:36 TraceID: <:TRACEID:> SpanID: <:SPANID:>[GetQuote] received request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:127 shippingservice hipstershop.ShippingService/GetQuote end
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:128 shippingservice hipstershop.ShippingService/CreateQuoteFromCount start
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:30 TraceID: <:TRACEID:> SpanID: <:SPANID:>[CreateQuoteFromCount] completed request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:30 TraceID: <:TRACEID:> SpanID: <:SPANID:>[CreateQuoteFromCount] completed request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:35 TraceID: <:TRACEID:> SpanID: <:SPANID:>[CreateQuoteFromCount] received request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:35 TraceID: <:TRACEID:> SpanID: <:SPANID:>[CreateQuoteFromCount] received request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:129 shippingservice hipstershop.ShippingService/CreateQuoteFromCount end
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:130 shippingservice hipstershop.ShippingService/QuoteByCountFloat start
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:33 TraceID: <:TRACEID:> SpanID: <:SPANID:>[QuoteByCountFloat] completed request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:33 TraceID: <:TRACEID:> SpanID: <:SPANID:>[QuoteByCountFloat] completed request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:34 TraceID: <:TRACEID:> SpanID: <:SPANID:>[QuoteByCountFloat] received request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:34 TraceID: <:TRACEID:> SpanID: <:SPANID:>[QuoteByCountFloat] received request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:131 shippingservice hipstershop.ShippingService/QuoteByCountFloat end
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:132 shippingservice hipstershop.ShippingService/CreateQuoteFromFloat start
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:31 TraceID: <:TRACEID:> SpanID: <:SPANID:>[CreateQuoteFromFloat] completed request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:31 TraceID: <:TRACEID:> SpanID: <:SPANID:>[CreateQuoteFromFloat] completed request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:32 TraceID: <:TRACEID:> SpanID: <:SPANID:>[CreateQuoteFromFloat] received request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:32 TraceID: <:TRACEID:> SpanID: <:SPANID:>[CreateQuoteFromFloat] received request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:133 shippingservice hipstershop.ShippingService/CreateQuoteFromFloat end
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:184: head:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:187: tail:105 currencyservice grpc.hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 18:39:19,457 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,472 data_integrate.py:184: head:100 currencyservice hipstershop.CurrencyService/GetCurrencyData start
+[INFO]2024-11-05 18:39:19,472 data_integrate.py:187: tail:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:101 currencyservice hipstershop.CurrencyService/GetCurrencyData end
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:105 currencyservice grpc.hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:100 currencyservice hipstershop.CurrencyService/GetCurrencyData start
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:101 currencyservice hipstershop.CurrencyService/GetCurrencyData end
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 18:39:19,474 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,489 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 18:39:19,489 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:187: tail:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:187: tail:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:187: tail:105 currencyservice grpc.hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:100 currencyservice hipstershop.CurrencyService/GetCurrencyData start
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:187: tail:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:187: tail:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:187: tail:101 currencyservice hipstershop.CurrencyService/GetCurrencyData end
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:187: tail:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:187: tail:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,490 data_integrate.py:184: head:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 18:39:19,505 data_integrate.py:187: tail:105 currencyservice grpc.hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 18:39:19,506 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:100 currencyservice hipstershop.CurrencyService/GetCurrencyData start
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:101 currencyservice hipstershop.CurrencyService/GetCurrencyData end
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:105 currencyservice grpc.hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:100 currencyservice hipstershop.CurrencyService/GetCurrencyData start
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:101 currencyservice hipstershop.CurrencyService/GetCurrencyData end
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 18:39:19,507 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,522 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,523 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,523 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 18:39:19,524 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,524 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:184: head:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:187: tail:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:184: head:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:187: tail:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:184: head:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:187: tail:105 currencyservice grpc.hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:184: head:100 currencyservice hipstershop.CurrencyService/GetCurrencyData start
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:187: tail:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:184: head:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:187: tail:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:184: head:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:187: tail:101 currencyservice hipstershop.CurrencyService/GetCurrencyData end
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:189: ----
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 18:39:19,525 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:06,039 data_integrate.py:472: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-05 19:04:23,233 data_integrate.py:541: Data Integrate Complete!
+[INFO]2024-11-05 19:04:23,304 data_integrate.py:184: head:76 frontend hipstershop.Frontend/Recv. start
+[INFO]2024-11-05 19:04:23,304 data_integrate.py:187: tail:1 TraceID: <:TRACEID:> SpanID: <:SPANID:> Request complete
+[INFO]2024-11-05 19:04:23,305 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,305 data_integrate.py:184: head:1 TraceID: <:TRACEID:> SpanID: <:SPANID:> Request complete
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:187: tail:15 TraceID: <:TRACEID:> SpanID: <:SPANID:> Serving product page complete
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:184: head:15 TraceID: <:TRACEID:> SpanID: <:SPANID:> Serving product page complete
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:187: tail:16 TraceID: <:TRACEID:> SpanID: <:SPANID:> Choose Ad complete
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:184: head:16 TraceID: <:TRACEID:> SpanID: <:SPANID:> Choose Ad complete
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:187: tail:17 TraceID: <:TRACEID:> SpanID: <:SPANID:> Choose Ad started
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:184: head:17 TraceID: <:TRACEID:> SpanID: <:SPANID:> Choose Ad started
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:187: tail:18 TraceID: <:TRACEID:> SpanID: <:SPANID:> Serving product page started
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:184: head:18 TraceID: <:TRACEID:> SpanID: <:SPANID:> Serving product page started
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:187: tail:4 TraceID: <:TRACEID:> SpanID: <:SPANID:> Request started
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:184: head:4 TraceID: <:TRACEID:> SpanID: <:SPANID:> Request started
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:187: tail:77 frontend hipstershop.Frontend/Recv. end
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:184: head:80 frontend hipstershop.CurrencyService/GetSupportedCurrencies start
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:187: tail:81 frontend hipstershop.CurrencyService/GetSupportedCurrencies end
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:187: tail:98 currencyservice grpc.hipstershop.CurrencyService/GetSupportedCurrencies start
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:184: head:82 frontend hipstershop.CartService/GetCart start
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:187: tail:83 frontend hipstershop.CartService/GetCart end
+[INFO]2024-11-05 19:04:23,306 data_integrate.py:187: tail:102 cartservice hipstershop.CartService/GetCart start
+[INFO]2024-11-05 19:04:23,317 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,317 data_integrate.py:184: head:84 frontend hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 19:04:23,317 data_integrate.py:187: tail:85 frontend hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 19:04:23,318 data_integrate.py:187: tail:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 19:04:23,318 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,318 data_integrate.py:184: head:86 frontend hipstershop.RecommendationService/ListRecommendations start
+[INFO]2024-11-05 19:04:23,320 data_integrate.py:187: tail:87 frontend hipstershop.RecommendationService/ListRecommendations end
+[INFO]2024-11-05 19:04:23,320 data_integrate.py:187: tail:108 recommendationservice /hipstershop.RecommendationService/ListRecommendations start
+[INFO]2024-11-05 19:04:23,320 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,320 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,321 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 19:04:23,321 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,321 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:184: head:78 frontend hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:187: tail:79 frontend hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:187: tail:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:184: head:88 frontend hipstershop.AdService/GetAds start
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:187: tail:89 frontend hipstershop.AdService/GetAds end
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:187: tail:116 adservice hipstershop.AdService/GetAds start
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,322 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,334 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,334 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,335 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,335 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,336 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 19:04:23,337 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,337 data_integrate.py:184: head:92 productcatalogservice hipstershop.ProductCatalogService/ListProducts start
+[INFO]2024-11-05 19:04:23,338 data_integrate.py:187: tail:9 TraceID: <:TRACEID:> SpanID: <:SPANID:> List products end
+[INFO]2024-11-05 19:04:23,338 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,338 data_integrate.py:184: head:9 TraceID: <:TRACEID:> SpanID: <:SPANID:> List products end
+[INFO]2024-11-05 19:04:23,338 data_integrate.py:187: tail:14 TraceID: <:TRACEID:> SpanID: <:SPANID:> Start list products
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:184: head:14 TraceID: <:TRACEID:> SpanID: <:SPANID:> Start list products
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:187: tail:93 productcatalogservice hipstershop.ProductCatalogService/ListProducts end
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 19:04:23,339 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,350 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,350 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,351 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,351 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,352 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,353 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,353 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,353 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 19:04:23,354 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,354 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,354 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,355 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,355 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,355 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:184: head:90 productcatalogservice hipstershop.ProductCatalogService/GetProduct start
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:187: tail:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:184: head:8 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query product with name and description <:*:>
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:187: tail:91 productcatalogservice hipstershop.ProductCatalogService/GetProduct end
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 19:04:23,356 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 19:04:23,367 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,367 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 19:04:23,368 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 19:04:23,369 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,369 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 19:04:23,370 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 19:04:23,370 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,370 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 19:04:23,371 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 19:04:23,371 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,371 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 19:04:23,371 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:184: head:94 productcatalogservice sql.conn.query start
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:187: tail:95 productcatalogservice sql.conn.query end
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:184: head:96 productcatalogservice sql.rows start
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:187: tail:97 productcatalogservice sql.rows end
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:184: head:98 currencyservice grpc.hipstershop.CurrencyService/GetSupportedCurrencies start
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:187: tail:24 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting supported currencies...
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:184: head:24 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting supported currencies...
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:187: tail:99 currencyservice grpc.hipstershop.CurrencyService/GetSupportedCurrencies end
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:184: head:100 currencyservice hipstershop.CurrencyService/GetCurrencyData start
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:187: tail:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:184: head:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:187: tail:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:184: head:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:187: tail:101 currencyservice hipstershop.CurrencyService/GetCurrencyData end
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:184: head:102 cartservice hipstershop.CartService/GetCart start
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:187: tail:25 TraceID: <:TRACEID:> SpanID: <:SPANID:> GetCartAsync called with userId=<:USERID:>
+[INFO]2024-11-05 19:04:23,372 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,384 data_integrate.py:184: head:25 TraceID: <:TRACEID:> SpanID: <:SPANID:> GetCartAsync called with userId=<:USERID:>
+[INFO]2024-11-05 19:04:23,384 data_integrate.py:187: tail:103 cartservice hipstershop.CartService/GetCart end
+[INFO]2024-11-05 19:04:23,385 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,385 data_integrate.py:184: head:104 currencyservice grpc.hipstershop.CurrencyService/Convert start
+[INFO]2024-11-05 19:04:23,385 data_integrate.py:187: tail:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 19:04:23,385 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,386 data_integrate.py:184: head:20 TraceID: <:TRACEID:> SpanID: <:SPANID:> Conversion request successful
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:187: tail:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:184: head:23 TraceID: <:TRACEID:> SpanID: <:SPANID:> Received conversion request
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:187: tail:105 currencyservice grpc.hipstershop.CurrencyService/Convert end
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:184: head:100 currencyservice hipstershop.CurrencyService/GetCurrencyData start
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:187: tail:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:184: head:19 TraceID: <:TRACEID:> SpanID: <:SPANID:> Get currency data successful
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:187: tail:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:184: head:22 TraceID: <:TRACEID:> SpanID: <:SPANID:> Getting currency data
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:187: tail:101 currencyservice hipstershop.CurrencyService/GetCurrencyData end
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:184: head:106 currencyservice hipstershop.CurrencyService/Carry start
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:187: tail:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:184: head:21 TraceID: <:TRACEID:> SpanID: <:SPANID:> Handles decimal or fractional carrying
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:187: tail:107 currencyservice hipstershop.CurrencyService/Carry end
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:184: head:108 recommendationservice /hipstershop.RecommendationService/ListRecommendations start
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:187: tail:6 TraceID: <:TRACEID:> SpanID: <:SPANID:> List Recommendations product ids=<:ITEM:>
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:184: head:6 TraceID: <:TRACEID:> SpanID: <:SPANID:> List Recommendations product ids=<:ITEM:>
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:187: tail:7 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query Recommendations
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:184: head:7 TraceID: <:TRACEID:> SpanID: <:SPANID:> Query Recommendations
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:187: tail:109 recommendationservice /hipstershop.RecommendationService/ListRecommendations end
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,387 data_integrate.py:184: head:110 recommendationservice /hipstershop.ProductCatalogService/ListProducts start
+[INFO]2024-11-05 19:04:23,400 data_integrate.py:187: tail:111 recommendationservice /hipstershop.ProductCatalogService/ListProducts end
+[INFO]2024-11-05 19:04:23,401 data_integrate.py:187: tail:92 productcatalogservice hipstershop.ProductCatalogService/ListProducts start
+[INFO]2024-11-05 19:04:23,401 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:184: head:112 productcatalogservice hipstershop.ProductCatalogService/ParseCatalog start
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:187: tail:10 TraceID: <:TRACEID:> SpanID: <:SPANID:> Parse catalog successfully
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:184: head:10 TraceID: <:TRACEID:> SpanID: <:SPANID:> Parse catalog successfully
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:187: tail:13 TraceID: <:TRACEID:> SpanID: <:SPANID:> Start parse catalog
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:184: head:13 TraceID: <:TRACEID:> SpanID: <:SPANID:> Start parse catalog
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:187: tail:113 productcatalogservice hipstershop.ProductCatalogService/ParseCatalog end
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:184: head:114 productcatalogservice hipstershop.ProductCatalogService/ReadCatalog start
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,402 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,417 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,417 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,418 data_integrate.py:187: tail:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,419 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,419 data_integrate.py:184: head:11 TraceID: <:TRACEID:> SpanID: <:SPANID:> get results: <:ITEM:>
+[INFO]2024-11-05 19:04:23,419 data_integrate.py:187: tail:12 TraceID: <:TRACEID:> SpanID: <:SPANID:> Start query product catalog
+[INFO]2024-11-05 19:04:23,419 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,419 data_integrate.py:184: head:12 TraceID: <:TRACEID:> SpanID: <:SPANID:> Start query product catalog
+[INFO]2024-11-05 19:04:23,420 data_integrate.py:187: tail:115 productcatalogservice hipstershop.ProductCatalogService/ReadCatalog end
+[INFO]2024-11-05 19:04:23,420 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,421 data_integrate.py:184: head:116 adservice hipstershop.AdService/GetAds start
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:187: tail:117 adservice hipstershop.AdService/GetAds end
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:184: head:118 adservice hipstershop.AdServiceImpl/getAds start
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:187: tail:28 <:NUM:>:<:NUM:>:<:NUM:>.<:NUM:> INFO - TraceID: <:TRACEID:> SpanID: <:SPANID:> Received ad request (context words=<:ITEM:>
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:184: head:28 <:NUM:>:<:NUM:>:<:NUM:>.<:NUM:> INFO - TraceID: <:TRACEID:> SpanID: <:SPANID:> Received ad request (context words=<:ITEM:>
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:187: tail:119 adservice hipstershop.AdServiceImpl/getAds end
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:184: head:119 adservice hipstershop.AdServiceImpl/getAds end
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:187: tail:198 MemoryUsageRate(%)
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:187: tail:120 adservice hipstershop.AdService/<:SPANID:> start
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:184: head:120 adservice hipstershop.AdService/<:SPANID:> start
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:187: tail:26 <:NUM:>:<:NUM:>:<:NUM:>.<:NUM:> INFO - TraceID: <:TRACEID:> SpanID: <:SPANID:> Get Ads by Category <:*:>
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:184: head:26 <:NUM:>:<:NUM:>:<:NUM:>.<:NUM:> INFO - TraceID: <:TRACEID:> SpanID: <:SPANID:> Get Ads by Category <:*:>
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:187: tail:26 <:NUM:>:<:NUM:>:<:NUM:>.<:NUM:> INFO - TraceID: <:TRACEID:> SpanID: <:SPANID:> Get Ads by Category <:*:>
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:184: head:26 <:NUM:>:<:NUM:>:<:NUM:>.<:NUM:> INFO - TraceID: <:TRACEID:> SpanID: <:SPANID:> Get Ads by Category <:*:>
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:187: tail:27 <:NUM:>:<:NUM:>:<:NUM:>.<:NUM:> INFO - TraceID: <:TRACEID:> SpanID: <:SPANID:> Query items successfully.
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:184: head:27 <:NUM:>:<:NUM:>:<:NUM:>.<:NUM:> INFO - TraceID: <:TRACEID:> SpanID: <:SPANID:> Query items successfully.
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:187: tail:121 adservice hipstershop.AdService/<:SPANID:> end
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:184: head:121 adservice hipstershop.AdService/<:SPANID:> end
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:187: tail:198 MemoryUsageRate(%)
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:187: tail:122 adservice SELECT addatabase.aditems start
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:189: ----
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:184: head:122 adservice SELECT addatabase.aditems start
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:187: tail:123 adservice SELECT addatabase.aditems end
+[INFO]2024-11-05 19:04:23,422 data_integrate.py:189: ----
+[INFO]2024-11-05 19:08:33,751 data_integrate.py:472: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-05 19:08:57,122 data_integrate.py:541: Data Integrate Complete!
+[INFO]2024-11-05 19:08:57,261 data_integrate.py:184: head:76 frontend hipstershop.Frontend/Recv. start
+[INFO]2024-11-05 19:08:57,262 data_integrate.py:187: tail:1 TraceID: <:TRACEID:> SpanID: <:SPANID:> Request complete
+[INFO]2024-11-05 19:08:57,262 data_integrate.py:189: ----
+[INFO]2024-11-05 19:08:57,263 data_integrate.py:184: head:1 TraceID: <:TRACEID:> SpanID: <:SPANID:> Request complete
+[INFO]2024-11-05 19:08:57,263 data_integrate.py:187: tail:39 TraceID: <:TRACEID:> SpanID: <:SPANID:> Setting currency complete
+[INFO]2024-11-05 19:08:57,264 data_integrate.py:189: ----
+[INFO]2024-11-05 19:08:57,264 data_integrate.py:184: head:39 TraceID: <:TRACEID:> SpanID: <:SPANID:> Setting currency complete
+[INFO]2024-11-05 19:08:57,265 data_integrate.py:187: tail:40 TraceID: <:TRACEID:> SpanID: <:SPANID:> Setting currency started
+[INFO]2024-11-05 19:08:57,265 data_integrate.py:189: ----
+[INFO]2024-11-05 19:08:57,266 data_integrate.py:184: head:40 TraceID: <:TRACEID:> SpanID: <:SPANID:> Setting currency started
+[INFO]2024-11-05 19:08:57,266 data_integrate.py:187: tail:4 TraceID: <:TRACEID:> SpanID: <:SPANID:> Request started
+[INFO]2024-11-05 19:08:57,267 data_integrate.py:189: ----
+[INFO]2024-11-05 19:08:57,267 data_integrate.py:184: head:4 TraceID: <:TRACEID:> SpanID: <:SPANID:> Request started
+[INFO]2024-11-05 19:08:57,268 data_integrate.py:187: tail:77 frontend hipstershop.Frontend/Recv. end
+[INFO]2024-11-05 19:08:57,268 data_integrate.py:189: ----

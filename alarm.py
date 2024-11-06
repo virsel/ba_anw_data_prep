@@ -109,7 +109,7 @@ def get_netwrok_metric(trace_file, pod_name):
         service = pod_name.rsplit('-', 1)[0]
         service = service.rsplit('-', 1)[0]
 
-        csv_file = dirname(__file__) +  "/metric_threshold/" + service + ".csv"
+        csv_file = metric_threshold_dir + "/" + service + ".csv"
         pod_reader = pd.read_csv(csv_file, usecols=['NetworkP90(ms)'])
         # print("pod", pod_name, " not found in trace, return default ",
         #       float(pod_reader.iloc[0]))

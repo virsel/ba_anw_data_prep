@@ -142,17 +142,16 @@ class Span(object):
 
 
 class Event(object):
-    def __init__(self, event, pod, ns, timestamp=None, spanid=None, parentid=None):
+    def __init__(self, event, pod,  timestamp=None, spanid=None, parentid=None):
         self.event = event
         self.pod = pod
         self.timestamp = timestamp
         self.spanid = spanid
         self.parentid = parentid
-        self.ns = ns 
 
     def show_event(self):
         logger.info("%s, %s, %s, %s", self.timestamp, self.spanid, self.event,
-                    from_id_to_template(self.event, self.ns))
+                    from_id_to_template(self.event))
 
 
 class EventGraph():
@@ -223,7 +222,7 @@ class EventGraph():
         return self.support_dict
 
 
-def get_events_within_trace(trace_reader, log_reader, trace_id, alarm_list, ns,log_template_miner):
+def get_events_within_trace(trace_reader, log_reader, trace_id, alarm_list, log_template_miner):
     """
     func get_events_within_trace: get all metric alarm, log, span within a trace and transform to event
     :parameter
@@ -264,7 +263,7 @@ def get_events_within_trace(trace_reader, log_reader, trace_id, alarm_list, ns,l
                     spans['OperationName'].iloc[span_index] + " end"
 
                 span.append_event(Event(timestamp=np.ceil(spans['StartTimeUnixNano'].iloc[span_index]).astype(int),
-                                        event=log_parsing(log=start_event, pod=pod, log_template_miner=log_template_miner), pod=pod, ns=ns, spanid=span_id, parentid=parent_id))
+                                        event=log_parsing(log=start_event, pod=pod, log_template_miner=log_template_miner), pod=pod, spanid=span_id, parentid=parent_id))
 
                 end_timestamp = np.ceil(
                     spans['EndTimeUnixNano'].iloc[span_index]).astype(int)
@@ -292,7 +291,7 @@ def get_events_within_trace(trace_reader, log_reader, trace_id, alarm_list, ns,l
                                 # if log_parsing(log=log, pod=pod) != histroy_id:
                                 #     histroy_id = log_parsing(log=log, pod=pod)
                                 span.append_event(Event(timestamp=timestamp,
-                                                        event=log_parsing(log=log, pod=pod, log_template_miner=log_template_miner), pod=pod, ns=ns, spanid=span_id, parentid=parent_id))
+                                                        event=log_parsing(log=log, pod=pod, log_template_miner=log_template_miner), pod=pod, spanid=span_id, parentid=parent_id))
 
                     # else:
                     # logger.debug("Spanid %s is not appear in log" % span_id)
@@ -301,25 +300,13 @@ def get_events_within_trace(trace_reader, log_reader, trace_id, alarm_list, ns,l
                     pass
 
                 span.append_event(Event(timestamp=end_timestamp,
-                                        event=log_parsing(log=end_event, pod=pod, log_template_miner=log_template_miner), pod=pod, ns=ns,spanid=span_id, parentid=parent_id))
+                                        event=log_parsing(log=end_event, pod=pod, log_template_miner=log_template_miner), pod=pod,spanid=span_id, parentid=parent_id))
                 # alarm event
                 # hipster
-                if ns == "hipster":
-                    if len(span.events) > 2:
-                        # if len(span.events) >= 2:
-                        # do not add alarm for client span
-                        for i in range(len(alarm_list)):
-                            alarm_dict = alarm_list[i]
-                            if alarm_dict["pod"] == span.pod:
-                                # logger.info(
-                                #     "%s, %s", alarm_dict["pod"], alarm_dict["alarm"])
-                                for index in range(len(alarm_dict["alarm"])):
-                                    span.append_event(Event(timestamp=np.ceil(spans['StartTimeUnixNano'].iloc[span_index]).astype(int) + index + 1,
-                                                            event=log_parsing(log=alarm_dict["alarm"][index]["metric_type"], pod="alarm",log_template_miner=log_template_miner), pod=pod, ns=ns,spanid=span_id, parentid=parent_id))
-                                # only add alarm event for the first span group
-                                # alarm_list.pop(i)
-                                break
-                elif ns == "ts":
+               
+                if len(span.events) > 2:
+                    # if len(span.events) >= 2:
+                    # do not add alarm for client span
                     for i in range(len(alarm_list)):
                         alarm_dict = alarm_list[i]
                         if alarm_dict["pod"] == span.pod:
@@ -327,10 +314,11 @@ def get_events_within_trace(trace_reader, log_reader, trace_id, alarm_list, ns,l
                             #     "%s, %s", alarm_dict["pod"], alarm_dict["alarm"])
                             for index in range(len(alarm_dict["alarm"])):
                                 span.append_event(Event(timestamp=np.ceil(spans['StartTimeUnixNano'].iloc[span_index]).astype(int) + index + 1,
-                                                        event=log_parsing(log=alarm_dict["alarm"][index]["metric_type"], pod="alarm",log_template_miner=log_template_miner), pod=pod, ns=ns,spanid=span_id, parentid=parent_id))
+                                                        event=log_parsing(log=alarm_dict["alarm"][index]["metric_type"], pod="alarm",log_template_miner=log_template_miner), pod=pod,spanid=span_id, parentid=parent_id))
                             # only add alarm event for the first span group
                             # alarm_list.pop(i)
-                            break                    
+                            break
+                   
 
                 # sort event by event timestamp
                 span.sort_events()
@@ -478,7 +466,6 @@ def data_integrate(trace_file, trace_id_file, log_file, alarm_list, log_template
         trace_id_file
         log_file
         alarm_list
-        ns
     :return
         list of event graph
     """
@@ -527,12 +514,12 @@ def data_integrate(trace_file, trace_id_file, log_file, alarm_list, log_template
 
     # for running
     # traces = [pool.apply_async(get_events_within_trace, args=(
-    #     trace_reader, log_reader, traceid, alarm_list, ns,)) for traceid in trace_id_reader[0]]
+    #     trace_reader, log_reader, traceid, alarm_list, )) for traceid in trace_id_reader[0]]
     # for trace in traces:
     #     log_sequences.append(trace.get())
 
     # graphs = [pool.apply_async(
-    #     generate_event_graph, args=(trace,ns,)) for trace in log_sequences]
+    #     generate_event_graph, args=(trace,)) for trace in log_sequences]
     # for graph in graphs:
     #     event_graphs.append(graph.get())
 
@@ -566,9 +553,9 @@ if __name__ == '__main__':
     log_file = construction_data_path + "/" + date + \
         "/log/" + hour_min + "_log.csv"
     
-    ns = "ts"
+
 
     alarm_list = []
     event_graphs = data_integrate(
-        trace_file, trace_id_file, log_file, alarm_list, ns)
+        trace_file, trace_id_file, log_file, alarm_list)
     

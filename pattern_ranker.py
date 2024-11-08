@@ -90,7 +90,7 @@ def abnormal_pattern_ranker(normal_pattern_dict, abnormal_pattern_dict, min_scor
     return score_dict
 
 
-def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, log_template_miner,topk=10, min_score=0.67):
+def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, log_template_miner,topk=10, min_score=0.55):
     rca_path = Config.fault_suffering_data_path
     abnormal_pattern_dict, _, alarm_list = get_pattern(abnormal_time, rca_path,log_template_miner)
     abnormal_pattern_score = abnormal_pattern_ranker(

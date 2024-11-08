@@ -89,6 +89,8 @@ def abnormal_pattern_ranker(normal_pattern_dict, abnormal_pattern_dict, min_scor
 
     return score_dict
 
+global_abnormal_patterns = {}
+
 
 def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, log_template_miner,topk=10, min_score=0.55):
     rca_path = Config.fault_suffering_data_path
@@ -103,6 +105,8 @@ def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, log_
             if key in abnormal_pattern_dict.keys():
                 score_dict[key] = 1.0 * normal_pattern_dict[key] / \
                     (abnormal_pattern_dict[key] + normal_pattern_dict[key])
+                if score_dict[key] < 0.5:
+                    score_dict[key] = 1.0 - score_dict[key]
                 # print(abnormal_pattern_dict[key],
                 #       normal_pattern_dict[key], score_dict[key])
             else:
@@ -227,8 +231,11 @@ def evaluation(normal_time_list, fault_inject_list,log_template_miner):
         root_cause_list = json.load(root_cause_lit_file)
         root_cause_lit_file.close()
         
+        
         for hour in fault_inject_data:
-            for fault in fault_inject_data[hour]:
+            indexOfHour = list(fault_inject_data.keys()).index(hour)
+            for i in range(len(fault_inject_data[hour])):
+                fault = fault_inject_data[hour][i]
                 fault_number = fault_number + 1
 
                 min = int(fault["inject_time"].split(":")[1]) + 2
@@ -248,6 +255,10 @@ def evaluation(normal_time_list, fault_inject_list,log_template_miner):
                 else:
                     abnormal_time = fault["inject_time"].split(
                         ":")[0] + ":" + str(min)
+                    
+                inject_service = fault["inject_pod"].rsplit('-', 1)[0]
+                inject_service = inject_service.rsplit('-', 1)[0]
+                
                 result_list, abnormal_pattern_score = pattern_ranker(
                     normal_pattern_list, normal_event_graphs, abnormal_time,log_template_miner)
 
@@ -255,9 +266,6 @@ def evaluation(normal_time_list, fault_inject_list,log_template_miner):
                 logger.info("%s Inject Ground Truth: %s, %s",
                             fault["inject_time"], fault["inject_pod"], fault["inject_type"])
                 topk = 1
-
-                inject_service = fault["inject_pod"].rsplit('-', 1)[0]
-                inject_service = inject_service.rsplit('-', 1)[0]
 
                 root_cause = root_cause_list[inject_service][fault["inject_type"]].split(
                     "_")

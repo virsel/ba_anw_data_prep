@@ -1191,3 +1191,14 @@
 [INFO]2024-11-08 17:00:03,199 main.py:34: ------- OnlineBoutique Result at inner service level -------
 [INFO]2024-11-08 17:00:03,876 data_integrate.py:472: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
 [INFO]2024-11-08 17:00:30,072 data_integrate.py:541: Data Integrate Complete!
+[INFO]2024-11-08 17:28:32,720 main.py:34: ------- OnlineBoutique Result at inner service level -------
+[INFO]2024-11-08 17:33:02,709 main.py:32: ------- OnlineBoutique Result at inner service level -------
+[INFO]2024-11-08 17:33:47,504 main.py:32: ------- OnlineBoutique Result at inner service level -------
+[INFO]2024-11-08 17:33:51,626 data_integrate.py:472: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-08 17:34:17,935 data_integrate.py:541: Data Integrate Complete!
+[INFO]2024-11-08 17:34:38,105 main.py:32: ------- OnlineBoutique Result at inner service level -------
+[INFO]2024-11-08 17:34:38,773 data_integrate.py:472: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-08 17:35:05,182 data_integrate.py:541: Data Integrate Complete!
+[INFO]2024-11-08 17:53:13,052 main.py:32: ------- OnlineBoutique Result at inner service level -------
+[INFO]2024-11-08 17:53:13,713 data_integrate.py:472: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-08 17:53:38,668 data_integrate.py:541: Data Integrate Complete!

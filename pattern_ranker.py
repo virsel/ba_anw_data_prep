@@ -5,8 +5,9 @@ import pdb
 import time
 import tqdm
 from config import Config
+from datetime import datetime, timedelta
 
-log_path = dirname(__file__) + '/log/' + str(datetime.datetime.now().strftime(
+log_path = dirname(__file__) + '/log/' + str(datetime.now().strftime(
     '%Y-%m-%d')) + '_nezha.log'
 logger = Logger(log_path, logging.DEBUG, __name__).getlog()
 
@@ -129,7 +130,8 @@ def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, log_
         # logger.info("%s %s %s %s" % (key, from_id_to_template(int(key.split("_")[0])), from_id_to_template(
         #     int(key.split("_")[1])), value))
         # only consider the root of child graph
-        if "Cpu" not in from_id_to_template(int(key.split("_")[1]),log_template_miner) and "Network" not in from_id_to_template(int(key.split("_")[1]),log_template_miner) and "Memory" not in from_id_to_template(int(key.split("_")[1]),log_template_miner):
+        log_var = from_id_to_template(int(key.split("_")[1]),log_template_miner)
+        if "Cpu" not in log_var and "Network" not in log_var and "Memory" not in log_var:
             for key1 in score_dict.keys():
                 if int(key.split("_")[0]) == int(key1.split("_")[1]) and score_dict[key] <= score_dict[key1]:
                     # logger.info("move key %s because it has root key %s" %
@@ -202,7 +204,7 @@ def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, log_
     return result_list, abnormal_pattern_score
 
 
-def evaluation(normal_time_list, fault_inject_list,log_template_miner):
+def evaluation(normal_time_list, fault_inject_path,log_template_miner):
     """
     func evaluation: evaluate nezha's precision in inner-service level
     para:
@@ -215,117 +217,112 @@ def evaluation(normal_time_list, fault_inject_list,log_template_miner):
     top_list = []
     fault_free_data_path = Config.fault_free_data_path
 
-    for i in range(len(fault_inject_list)):
-        ground_truth_path = fault_inject_list[i]
-        normal_time = normal_time_list[i]
+
+    normal_time = normal_time_list[0]
        
-        normal_pattern_list, normal_event_graphs, normal_alarm_list = get_pattern(
-            normal_time, fault_free_data_path,log_template_miner)
-        f = open(ground_truth_path)
-        fault_inject_data = json.load(f)
-        f.close()
+    normal_pattern_list, normal_event_graphs, normal_alarm_list = get_pattern(
+        normal_time, fault_free_data_path,log_template_miner)
+    f = open(fault_inject_path)
+    fault_inject_data = json.load(f)
+    f.close()
 
-        root_cause_file = fault_free_data_path + "/root_cause.json"
+    root_cause_file = fault_free_data_path + "/root_cause.json"
 
-        root_cause_lit_file = open(root_cause_file)
-        root_cause_list = json.load(root_cause_lit_file)
-        root_cause_lit_file.close()
+    root_cause_lit_file = open(root_cause_file)
+    root_cause_list = json.load(root_cause_lit_file)
+    root_cause_lit_file.close()
+    
+    
+
+    for i in range(len(fault_inject_data)):
+        fault_number = fault_number + 1
         
+        fault = fault_inject_data[i]
+        inject_time = ':'.join(fault['inject_time'].split(':')[:-1])
+        inject_time_next = ':'.join(fault['inject_time_next'].split(':')[:-1])
+        inject_time_dt = datetime.strptime(inject_time, "%Y-%m-%d %H:%M")
+        inject_time_next_dt = datetime.strptime(inject_time_next, "%Y-%m-%d %H:%M")
         
-        for hour in fault_inject_data:
-            indexOfHour = list(fault_inject_data.keys()).index(hour)
-            for i in range(len(fault_inject_data[hour])):
-                fault = fault_inject_data[hour][i]
-                fault_number = fault_number + 1
+        # Generate all datetimes in minute steps between start and end
+        faulty_dts = []
+        current_datetime = inject_time_dt
+        current_datetime += timedelta(minutes=1)
+        while current_datetime < inject_time_next_dt and len(faulty_dts) < 2:
+            faulty_dts.append(current_datetime.strftime("%Y-%m-%d %H:%M"))
+            current_datetime += timedelta(minutes=1)
+            
+        inject_service = fault["inject_pod"].rsplit('-', 1)[0]
+        inject_service = inject_service.rsplit('-', 1)[0]
+        
+        abnormal_time = faulty_dts[0]
+        
+        result_list, abnormal_pattern_score = pattern_ranker(
+            normal_pattern_list, normal_event_graphs, abnormal_time,log_template_miner)
 
-                min = int(fault["inject_time"].split(":")[1]) + 2
+        logger.info("%s Inject RCA Result:", fault["inject_time"])
+        logger.info("%s Inject Ground Truth: %s, %s",
+                    fault["inject_time"], fault["inject_pod"], fault["inject_type"])
+        topk = 1
 
-                if min >= 60:
-                    hour_min = fault["inject_time"].split(" ")[1]
-                    hour = int(hour_min.split(":")[0])
-                    if hour < 9:
-                        abnormal_time = fault["inject_time"].split(
-                            " ")[0] + " 0" + str(hour+1) + ":0" + str(min-60)
-                    else:
-                        abnormal_time = fault["inject_time"].split(
-                            " ")[0] + " " + str(hour+1) + ":0" + str(min-60)
-                elif min < 10:
-                    abnormal_time = fault["inject_time"].split(
-                        ":")[0] + ":0" + str(min)
+        root_cause = root_cause_list[inject_service][fault["inject_type"]].split(
+            "_")
+
+        if len(root_cause) == 1:
+            for i in range(len(result_list)):
+                if "resource" in result_list[i].keys():
+                    if str(root_cause[0]) in str(result_list[i]["resource"]) and str(fault["inject_pod"]) in str(result_list[i]["pod"]):
+                        top_list.append(topk)
+                        logger.info("%s Inject Ground Truth: %s, %s score %s", fault["inject_time"],
+                                    fault["inject_pod"], fault["inject_type"], topk)
+                        break
                 else:
-                    abnormal_time = fault["inject_time"].split(
-                        ":")[0] + ":" + str(min)
-                    
-                inject_service = fault["inject_pod"].rsplit('-', 1)[0]
-                inject_service = inject_service.rsplit('-', 1)[0]
-                
-                result_list, abnormal_pattern_score = pattern_ranker(
-                    normal_pattern_list, normal_event_graphs, abnormal_time,log_template_miner)
-
-                logger.info("%s Inject RCA Result:", fault["inject_time"])
-                logger.info("%s Inject Ground Truth: %s, %s",
-                            fault["inject_time"], fault["inject_pod"], fault["inject_type"])
-                topk = 1
-
-                root_cause = root_cause_list[inject_service][fault["inject_type"]].split(
-                    "_")
-
-                if len(root_cause) == 1:
-                    for i in range(len(result_list)):
-                        if "resource" in result_list[i].keys():
-                            if str(root_cause[0]) in str(result_list[i]["resource"]) and str(fault["inject_pod"]) in str(result_list[i]["pod"]):
-                                top_list.append(topk)
-                                logger.info("%s Inject Ground Truth: %s, %s score %s", fault["inject_time"],
-                                            fault["inject_pod"], fault["inject_type"], topk)
-                                break
+                    if i > 0:
+                        if result_list[i-1]["score"] == result_list[i]["score"] and result_list[i-1]["deepth"] == result_list[i]["deepth"]:
+                            continue
                         else:
-                            if i > 0:
-                                if result_list[i-1]["score"] == result_list[i]["score"] and result_list[i-1]["deepth"] == result_list[i]["deepth"]:
-                                    continue
-                                else:
-                                    topk = topk + 1
-                            elif i == 0:
-                                topk = topk + 1
-                elif len(root_cause) == 2:
-                    for i in range(len(result_list)):
-                        if root_cause[0] in from_id_to_template(int(result_list[i]["events"].split(
-                                "_")[0]),log_template_miner) and root_cause[1] in from_id_to_template(int(result_list[i]["events"].split("_")[1]),log_template_miner) and str(fault["inject_pod"]) in str(result_list[i]["pod"]):
-                            top_list.append(topk)
-                            logger.info("%s Inject Ground Truth: %s, %s score %s", fault["inject_time"],
-                                        fault["inject_pod"], fault["inject_type"], topk)
-                            break
-                        else:
-                            if i > 0:
-                                # logger.info("%s, %s",
-                                #             result_list[i-1]["score"], result_list[i]["score"])
-                                if result_list[i-1]["score"] == result_list[i]["score"] and result_list[i-1]["deepth"] == result_list[i]["deepth"]:
-                                    continue
-                                else:
-                                    topk = topk + 1
-                            elif i == 0:
-                                topk = topk + 1
+                            topk = topk + 1
+                    elif i == 0:
+                        topk = topk + 1
+        elif len(root_cause) == 2:
+            for i in range(len(result_list)):
+                if root_cause[0] in from_id_to_template(int(result_list[i]["events"].split(
+                        "_")[0]),log_template_miner) and root_cause[1] in from_id_to_template(int(result_list[i]["events"].split("_")[1]),log_template_miner) and str(fault["inject_pod"]) in str(result_list[i]["pod"]):
+                    top_list.append(topk)
+                    logger.info("%s Inject Ground Truth: %s, %s score %s", fault["inject_time"],
+                                fault["inject_pod"], fault["inject_type"], topk)
+                    break
                 else:
-                    logger.info("%s", root_cause)
-                
-                result_len = len(result_list)
-                if result_len > 10:
-                    result_len = 10
+                    if i > 0:
+                        # logger.info("%s, %s",
+                        #             result_list[i-1]["score"], result_list[i]["score"])
+                        if result_list[i-1]["score"] == result_list[i]["score"] and result_list[i-1]["deepth"] == result_list[i]["deepth"]:
+                            continue
+                        else:
+                            topk = topk + 1
+                    elif i == 0:
+                        topk = topk + 1
+        else:
+            logger.info("%s", root_cause)
+        
+        result_len = len(result_list)
+        if result_len > 10:
+            result_len = 10
 
-                for i in range(result_len):
-                    if "resource" in result_list[i].keys():
-                        logger.info("source :%s, target: %s, score: %s, deepth: %s, pod %s, resource alert %s" % (
-                            from_id_to_template(int(result_list[i]["events"].split("_")[0]),log_template_miner), from_id_to_template(int(result_list[i]["events"].split("_")[1]),log_template_miner), result_list[i]["score"], result_list[i]["deepth"], result_list[i]["pod"], result_list[i]["resource"]))
-                    else:
-                        logger.info("source :%s, target: %s, score: %s, deepth: %s, pod %s" % (from_id_to_template(int(result_list[i]["events"].split("_")[
-                                    0]), log_template_miner), from_id_to_template(int(result_list[i]["events"].split("_")[1]), log_template_miner), result_list[i]["score"], result_list[i]["deepth"], result_list[i]["pod"]))
+        for i in range(result_len):
+            if "resource" in result_list[i].keys():
+                logger.info("source :%s, target: %s, score: %s, deepth: %s, pod %s, resource alert %s" % (
+                    from_id_to_template(int(result_list[i]["events"].split("_")[0]),log_template_miner), from_id_to_template(int(result_list[i]["events"].split("_")[1]),log_template_miner), result_list[i]["score"], result_list[i]["deepth"], result_list[i]["pod"], result_list[i]["resource"]))
+            else:
+                logger.info("source :%s, target: %s, score: %s, deepth: %s, pod %s" % (from_id_to_template(int(result_list[i]["events"].split("_")[
+                            0]), log_template_miner), from_id_to_template(int(result_list[i]["events"].split("_")[1]), log_template_miner), result_list[i]["score"], result_list[i]["deepth"], result_list[i]["pod"]))
 
-                        for item in abnormal_pattern_score:
-                            if result_list[i]["events"].split("_")[0] == item.split("_")[0]:
-                                logger.info("actual pattern source :%s, target: %s" % (from_id_to_template(int(item.split("_")[
-                                            0]),log_template_miner), from_id_to_template(int(item.split("_")[1]),log_template_miner)))
-                                break
+                for item in abnormal_pattern_score:
+                    if result_list[i]["events"].split("_")[0] == item.split("_")[0]:
+                        logger.info("actual pattern source :%s, target: %s" % (from_id_to_template(int(item.split("_")[
+                                    0]),log_template_miner), from_id_to_template(int(item.split("_")[1]),log_template_miner)))
+                        break
 
-                logger.info("")
+        logger.info("")
 
 
     logger.info("%s", top_list)
@@ -677,9 +674,9 @@ if __name__ == '__main__':
     # inject_list = [path1, path2]
     # normal_time_list = [normal_time1, normal_time2]
 
-    inject_list = [path2]
+    inject_path = [path2]
     normal_time_list = [normal_time2]
-    evaluation(normal_time_list, inject_list,template_miner)
+    evaluation(normal_time_list, inject_path,template_miner)
     # evaluation_pod(normal_time_list, inject_list, ns)
     # evaluation_min_score(normal_time_list, inject_list, ns)
 

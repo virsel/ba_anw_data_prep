@@ -51,6 +51,7 @@ def log_parsing(log, pod, log_template_miner,logrca=True):
     result = log_template_miner.add_log_message(log_message)
 
     if result["change_type"] != "none":
+        # log_template_miner.save_state()
         result_json = json.dumps(result)
         # logger.info(service)
         logger.info(service + " Log Parings Result: " + result_json)

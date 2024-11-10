@@ -90,6 +90,18 @@ def abnormal_pattern_ranker(normal_pattern_dict, abnormal_pattern_dict, min_scor
 
     return score_dict
 
+def abnormal_pattern_ranker_custom(normal_pattern_dict, abnormal_pattern_dict, min_diff=2):
+    score_dict = {}
+    for key in abnormal_pattern_dict.keys():
+        if key in normal_pattern_dict.keys():
+            diff_value = normal_pattern_dict[key] - abnormal_pattern_dict[key]
+            if abs(diff_value) >= min_diff:
+                score_dict[key] = diff_value
+        elif abnormal_pattern_dict[key] >= min_diff:
+            score_dict[key] = abnormal_pattern_dict[key]
+
+    return score_dict
+
 global_abnormal_patterns = {}
 
 
@@ -203,6 +215,85 @@ def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, log_
     #         int(key.split("_")[1])), value["score"], value["deepth"]))
     return result_list, abnormal_pattern_score
 
+def pattern_ranker_custom(fault_free_pattern, fault_suffering_event_graphs, fault_suffering_pattern, log_template_miner, topk=10, min_diff=1):
+    abnormal_pattern_score = abnormal_pattern_ranker_custom(
+        fault_free_pattern, fault_suffering_pattern, min_diff)
+    error_eventids = [185, 187, 188, 189, 201, 204, 205, 207, 208, 209]
+    
+    patterns_noerror =  {
+        k: v for k, v in abnormal_pattern_score.items() 
+        if not any(str(id_) in k.split('_') for id_ in error_eventids)
+    }
+    
+    patterns_error =  {
+        k: v for k, v in abnormal_pattern_score.items() 
+        if any(str(id_) in k.split('_') for id_ in error_eventids)
+    }
+
+    reuslts_noerror = pattern_ranker_fromscore(patterns_noerror, fault_suffering_event_graphs, log_template_miner, topk)
+    reuslts_error = pattern_ranker_fromscore(patterns_error, fault_suffering_event_graphs, log_template_miner, topk)
+    
+    return reuslts_noerror[0:topk], reuslts_error
+
+def pattern_ranker_fromscore(abnormal_pattern_score, fault_suffering_event_graphs, log_template_miner, topk=10):
+    move_list = set()
+    for key in abnormal_pattern_score.keys():
+        # only consider the root of child graph
+        log_var = from_id_to_template(int(key.split("_")[1]),log_template_miner)
+        if "Cpu" not in log_var and "Network" not in log_var and "Memory" not in log_var:
+            for key1 in abnormal_pattern_score.keys():
+                if int(key.split("_")[0]) == int(key1.split("_")[1]) and abs(abnormal_pattern_score[key]) <= abs(abnormal_pattern_score[key1]):
+                    move_list.add(key)
+    for item in move_list:
+        abnormal_pattern_score.pop(item)
+
+    result_list = []
+    deepth_dict = {}
+    for key, value in abnormal_pattern_score.items():
+        deepth, pod = get_event_depth_pod(fault_suffering_event_graphs, key)
+        
+        if pod not in deepth_dict:
+            deepth_dict[pod] = {}
+        if key not in deepth_dict[pod]:
+            deepth_dict[pod][key] = deepth
+        elif deepth_dict[pod][key] < deepth:
+            deepth_dict[pod][key] = deepth
+
+        if pod == "":
+            deepth = 1
+            pod = "frontend-579b9bff58-t2dbm"
+
+        result_list.append({"events": key, "score": value,
+                                "deepth": deepth, "pod": pod})
+
+    # if many alarm in one service instane, only persistent the deepest one
+    move_list = set()
+    alarm_eventids=['184', '92']
+    for key_pod in deepth_dict.keys():
+        pod_events = deepth_dict[key_pod]
+            # Filter keys that contain any of the target ids
+        matching_keys = {k: v for k, v in pod_events.items() 
+                    if any(id in k for id in alarm_eventids)}
+    
+        # If no matches found, return None
+        if not matching_keys:
+            continue
+
+        # Return the key with maximum depth value
+        deepest_key = max(matching_keys.items(), key=lambda x: x[1])[0]
+            # Create move list with all matching keys except the deepest
+        for key in matching_keys.keys():
+            if matching_keys[key] < matching_keys[deepest_key]:
+                move_list.add(key)
+
+    result_list = [d for d in result_list if d['events'] not in move_list]
+
+    # if score is the same, deeper is prefer
+    result_list = sorted(result_list, key=lambda i: (
+        abs(i['score']), i['deepth']), reverse=True)
+    
+    return result_list[0:topk]
+
 
 def evaluation(normal_time_list, fault_inject_path,log_template_miner):
     """
@@ -239,9 +330,12 @@ def evaluation(normal_time_list, fault_inject_path,log_template_miner):
         
         fault = fault_inject_data[i]
         inject_time = ':'.join(fault['inject_time'].split(':')[:-1])
-        inject_time_next = ':'.join(fault['inject_time_next'].split(':')[:-1])
         inject_time_dt = datetime.strptime(inject_time, "%Y-%m-%d %H:%M")
-        inject_time_next_dt = datetime.strptime(inject_time_next, "%Y-%m-%d %H:%M")
+        if fault['inject_time_next']:
+            inject_time_next = ':'.join(fault['inject_time_next'].split(':')[:-1])
+            inject_time_next_dt = datetime.strptime(inject_time_next, "%Y-%m-%d %H:%M")
+        else:
+            inject_time_next_dt = inject_time_dt + timedelta(minutes=3)
         
         # Generate all datetimes in minute steps between start and end
         faulty_dts = []

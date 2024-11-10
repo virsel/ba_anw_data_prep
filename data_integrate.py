@@ -17,8 +17,21 @@ import pdb
 import re
 import tqdm
 import os
+from datetime import timedelta
+import joblib
 
 import concurrent.futures
+def get_miner(ns="hipster"):
+    config = TemplateMinerConfig()
+    config.load("input/log_template/drain3_" + ns + ".ini")
+    config.profiling_enabled = False
+
+    path = 'input/log_template/' + ns + ".bin"
+    persistence = FilePersistence(path)
+    template_miner = TemplateMiner(persistence, config=config)
+    template_miner.load_state()
+
+    return template_miner
 
 NUM_WORKERS = psutil.cpu_count(logical=False)
 
@@ -541,21 +554,184 @@ def data_integrate(trace_file, trace_id_file, log_file, alarm_list, log_template
     logger.info("Data Integrate Complete!")
     return event_graphs
 
+def data_integrate_noparallel(trace_file, trace_id_file, log_file, alarm_list, log_template_miner):
+    """
+    func data_integrate: integrate multimodle data to event graph
+    :parameter
+        trace_file
+        trace_id_file
+        log_file
+        alarm_list
+    :return
+        list of event graph
+    """
+    logger.info(alarm_list)
+    # alarm_list = []
+    trace_id_reader = pd.read_csv(
+        trace_id_file, index_col=False, header=None, engine='c')
+    trace_reader = pd.read_csv(
+        trace_file, index_col='TraceID', usecols=['TraceID', 'SpanID', 'ParentID', 'PodName', 'StartTimeUnixNano', 'EndTimeUnixNano', 'OperationName'],engine='c')
+    log_reader = pd.read_csv(log_file, index_col='SpanID', usecols=[
+        'TimeUnixNano', 'SpanID', 'Log'], engine='c')
+    log_sequences = []
+    traces = []
+    # print(datetime.datetime.now())
+    event_graphs = []
+    # pool = Pool(200)
+
+    # traces = [pool.apply_async(get_logs_within_trace_map, args=(
+    #     trace_reader, log_reader, trace_id_reader[0][i],)) for i in range(len(trace_id_reader[0]))]
+
+    # for test
+    # trace = get_events_within_trace(trace_reader, log_reader,
+    #                                 trace_id_reader[0][3], alarm_list)
+    # graph = generate_event_graph(trace)
+    # event_graphs.append(graph)
+
+    # Process traces sequentially
+    for traceid in trace_id_reader[0]:
+        trace = get_events_within_trace(trace_reader, log_reader, traceid, alarm_list, log_template_miner)
+        if trace is not None:
+            log_sequences.append(trace)
+
+    # Generate event graphs sequentially
+    for trace in log_sequences:
+        graph = generate_event_graph(trace, log_template_miner)
+        if graph is not None:
+            event_graphs.append(graph)
+
+    # for running
+    # traces = [pool.apply_async(get_events_within_trace, args=(
+    #     trace_reader, log_reader, traceid, alarm_list, )) for traceid in trace_id_reader[0]]
+    # for trace in traces:
+    #     log_sequences.append(trace.get())
+
+    # graphs = [pool.apply_async(
+    #     generate_event_graph, args=(trace,)) for trace in log_sequences]
+    # for graph in graphs:
+    #     event_graphs.append(graph.get())
+
+    for graph in event_graphs:
+        # logger.info("Start show graph")
+        # graph.show_graph()
+        graph.get_support()
+        # graph.get_deepth(107)
+
+    # del trace_id_reader
+    # del trace_reader
+    # del log_reader
+
+    # pool.close()
+    # pool.join()
+
+    # events[0][0].show_event()
+    # print(datetime.datetime.now())
+    logger.info("Data Integrate Complete!")
+    return event_graphs
+
+
+def log_template_minefaultsuffering(log_template_miner):
+
+    
+    fault_inject_path = "input/fault_suffering/fault_list.json"
+       
+    f = open(fault_inject_path)
+    fault_inject_data = json.load(f)
+    f.close()
+    res_dict = {}
+
+    for i in range(len(fault_inject_data)):
+        fault = fault_inject_data[i]
+        inject_time = ':'.join(fault['inject_time'].split(':')[:-1])
+        inject_time_dt = datetime.datetime.strptime(inject_time, "%Y-%m-%d %H:%M")
+        if fault['inject_time_next']:
+            inject_time_next = ':'.join(fault['inject_time_next'].split(':')[:-1])
+            inject_time_next_dt = datetime.datetime.strptime(inject_time_next, "%Y-%m-%d %H:%M")
+        else:
+            inject_time_next_dt = inject_time_dt + timedelta(minutes=3)
+        
+        # Generate all datetimes in minute steps between start and end
+        faulty_dts = []
+        current_datetime = inject_time_dt
+        current_datetime += timedelta(minutes=1)
+        while current_datetime < inject_time_next_dt and len(faulty_dts) < 2:
+            faulty_dts.append(current_datetime.strftime("%Y-%m-%d %H:%M"))
+            current_datetime += timedelta(minutes=1)
+            
+        inject_service = fault["inject_pod"].rsplit('-', 1)[0]
+        inject_service = inject_service.rsplit('-', 1)[0]
+        
+        for date_time in faulty_dts:
+            data_path = "input/fault_suffering"
+
+            metric_list = get_metric_with_time(date_time, data_path)
+            alarm_list = generate_alarm(metric_list)
+
+            date = date_time.split(" ")[0]
+            hour = date_time.split(" ")[1].split(":")[0]
+            min = date_time.split(" ")[1].split(":")[1]
+
+            trace_file = data_path + "/" + date + \
+                "/trace/" + str(hour) + "_" + str(min) + "_trace.csv"
+            trace_id_file = data_path + "/" + date + \
+                "/traceid/" + str(hour) + "_" + str(min) + "_traceid.csv"
+            log_file = data_path + "/" + date + \
+                "/log/" + str(hour) + "_" + str(min) + "_log.csv"
+
+            event_graphs = data_integrate_noparallel(
+                trace_file, trace_id_file, log_file, alarm_list, log_template_miner)
+            res_dict[date_time] = {'event_graphs': event_graphs, 'inject_type': fault['inject_type'], 'inject_pod': fault['inject_pod'], 'inject_time': fault['inject_time']}
+        # To save
+    joblib.dump(res_dict, 'output/fault_suffering_eventgraphs.joblib')
+            
+def log_template_minefaultfree(log_template_miner):
+    res_dict = {}
+    normal_time1 = "2022-08-22 03:51"
+    normal_time2 = "2022-08-23 17:00"
+    normal_time_list = [normal_time1, normal_time2]
+        
+    for date_time in normal_time_list:
+        data_path = "input/fault_free"
+
+        metric_list = get_metric_with_time(date_time, data_path)
+        alarm_list = generate_alarm(metric_list)
+
+        date = date_time.split(" ")[0]
+        hour = date_time.split(" ")[1].split(":")[0]
+        min = date_time.split(" ")[1].split(":")[1]
+
+        trace_file = data_path + "/" + date + \
+            "/trace/" + str(hour) + "_" + str(min) + "_trace.csv"
+        trace_id_file = data_path + "/" + date + \
+            "/traceid/" + str(hour) + "_" + str(min) + "_traceid.csv"
+        log_file = data_path + "/" + date + \
+            "/log/" + str(hour) + "_" + str(min) + "_log.csv"
+
+        event_graphs = data_integrate_noparallel(
+            trace_file, trace_id_file, log_file, alarm_list, log_template_miner)
+        res_dict[date_time] = event_graphs
+    # dump res_dict to json file
+    # To save
+    joblib.dump(res_dict, 'output/fault_free_eventgraphs.joblib')
 
 if __name__ == '__main__':
-    date = "2023-01-29"
-    hour_min = "08_50"
-    construction_data_path = "./construct_data"
-    trace_file = construction_data_path + "/" + \
-        date + "/trace/" + hour_min + "_trace.csv"
-    trace_id_file = construction_data_path + "/" + date + \
-        "/traceid/" + hour_min + "_traceid.csv"
-    log_file = construction_data_path + "/" + date + \
-        "/log/" + hour_min + "_log.csv"
+    # date = "2023-01-29"
+    # hour_min = "08_50"
+    # construction_data_path = "./construct_data"
+    # trace_file = construction_data_path + "/" + \
+    #     date + "/trace/" + hour_min + "_trace.csv"
+    # trace_id_file = construction_data_path + "/" + date + \
+    #     "/traceid/" + hour_min + "_traceid.csv"
+    # log_file = construction_data_path + "/" + date + \
+    #     "/log/" + hour_min + "_log.csv"
     
 
 
-    alarm_list = []
-    event_graphs = data_integrate(
-        trace_file, trace_id_file, log_file, alarm_list)
+    # alarm_list = []
+    # event_graphs = data_integrate(
+    #     trace_file, trace_id_file, log_file, alarm_list)
+    log_template_miner = get_miner()
+    # log_template_minefaultfree(log_template_miner)
+    log_template_minefaultsuffering(log_template_miner)
+    
     

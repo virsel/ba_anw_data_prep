@@ -14,6 +14,7 @@ def get_miner(ns="hipster"):
     path = 'input/log_template/' + ns + ".bin"
     persistence = FilePersistence(path)
     template_miner = TemplateMiner(persistence, config=config)
+    template_miner.load_state()
 
     return template_miner
 
@@ -31,4 +32,5 @@ if __name__ == '__main__':
     else:
         logger.info("------- OnlineBoutique Result at inner service level -------")
         evaluation(normal_time_list, inject_path,log_template_miner)
+    # log_template_miner.save_state("")
 

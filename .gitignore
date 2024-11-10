@@ -2,3 +2,4 @@
 input
 ba_anw
 __pycache__
+*.joblib

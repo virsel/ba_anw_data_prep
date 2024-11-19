@@ -1,0 +1,228 @@
+[INFO]2024-11-19 16:18:46,654 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:19:01,632 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:19:08,822 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:19:18,736 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:19:23,524 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:19:31,424 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:19:37,127 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:19:46,513 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:19:54,607 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:20:06,471 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:20:13,768 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:20:24,704 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:20:34,898 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:20:50,432 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:21:00,329 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:21:15,795 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:21:24,958 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:21:38,937 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:21:47,972 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:22:01,622 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:22:11,523 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:22:27,085 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:22:37,087 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:22:52,837 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:23:02,012 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:23:15,953 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:23:25,720 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:23:41,040 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:23:51,638 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:24:07,817 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:24:18,488 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:24:35,029 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:24:45,814 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:25:02,806 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:25:13,128 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:25:29,596 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:25:39,351 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:25:54,433 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:26:04,461 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:26:20,366 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:26:23,122 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:26:26,795 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:26:28,996 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:26:31,942 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:26:37,788 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:26:46,619 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:26:52,563 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:27:01,271 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:27:11,452 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:27:27,216 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:27:37,515 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:27:53,502 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:28:03,455 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:28:18,397 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:28:28,421 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:28:43,971 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:28:53,505 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:29:08,411 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:29:18,697 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:29:35,049 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:29:45,414 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:30:02,098 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:30:12,247 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:30:27,596 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:30:36,426 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-wckp8', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:30:50,401 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:30:58,757 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-wckp8', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:31:11,524 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:31:20,805 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:31:34,801 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:31:43,199 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:31:55,934 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:32:04,392 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:32:17,196 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:32:25,318 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:32:38,474 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:32:43,438 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:32:50,250 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:32:55,554 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:33:03,504 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:33:13,091 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:33:27,146 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:33:36,704 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:33:51,314 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:34:00,886 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:34:16,012 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:34:25,546 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:34:41,346 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:34:51,177 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:35:06,547 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:35:16,957 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:35:32,519 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:35:42,600 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:35:57,903 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:36:07,380 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:36:22,395 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:36:29,847 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:36:40,707 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:36:48,012 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:36:58,652 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:37:03,682 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:37:12,257 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:37:17,502 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:37:27,208 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:37:35,429 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:37:47,632 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:37:55,883 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:38:08,113 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:38:18,285 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:38:34,150 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:38:44,238 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:38:59,963 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:39:10,602 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:39:27,121 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:39:37,223 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:39:52,083 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:40:02,513 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:40:19,750 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:40:29,821 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:40:45,319 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:40:55,966 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:41:11,774 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:41:21,870 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:41:37,222 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:41:47,467 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:42:03,262 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:42:13,792 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:42:30,044 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:42:40,002 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:42:55,611 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:43:06,223 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:43:22,518 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:43:33,405 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:43:51,376 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:44:01,557 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:44:17,118 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:44:24,459 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:44:35,556 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:44:38,335 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:44:42,219 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:44:48,957 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:44:58,608 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:45:05,030 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:45:14,391 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:45:24,419 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:45:39,521 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:45:50,208 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:46:06,254 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:46:16,505 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:46:32,712 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:46:43,289 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:47:00,044 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:47:10,714 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:47:26,833 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:47:37,989 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:47:56,393 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:48:06,786 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:48:23,194 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:48:32,884 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:48:47,752 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:48:58,585 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:49:14,808 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:49:25,176 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:49:41,009 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:49:49,934 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:50:02,888 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:50:12,017 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:50:25,555 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:50:30,598 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:50:38,238 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:50:41,058 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:50:45,783 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:50:55,897 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-jhwx9', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:51:11,530 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:51:19,968 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-jhwx9', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:51:32,934 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:51:35,966 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:51:41,210 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:51:43,905 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:51:48,553 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:51:58,611 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:52:14,294 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:52:23,632 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:52:39,132 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:52:48,690 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:53:02,503 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:53:10,855 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:53:22,783 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:53:30,563 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:53:40,588 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:53:45,927 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:53:53,489 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:54:03,642 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:54:18,895 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:54:28,647 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:54:43,513 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:54:54,260 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:55:10,733 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:55:20,407 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:55:35,328 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:55:44,929 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:55:59,790 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:56:09,625 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:56:24,543 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:56:33,743 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:56:47,502 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:56:56,261 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:57:09,859 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:57:20,582 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:57:39,188 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:57:48,812 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:58:03,607 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:58:14,075 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:58:30,478 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:58:40,951 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:58:56,909 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:59:06,046 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:59:19,610 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:59:27,651 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 16:59:39,500 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 16:59:50,131 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 17:00:06,247 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 17:00:16,152 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 17:00:31,503 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 17:13:08,934 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 17:13:24,016 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-19 17:13:33,692 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-19 17:13:48,645 data_integrate.py:629: Data Integrate Complete!

@@ -36,9 +36,9 @@ def get_miner(ns="hipster"):
 NUM_WORKERS = psutil.cpu_count(logical=False)
 
 
-log_path = dirname(__file__) + '/log/' + str(datetime.datetime.now().strftime(
+log_path = 'log/' + str(datetime.datetime.now().strftime(
     '%Y-%m-%d')) + '_nezha.log'
-os.makedirs(os.path.dirname(log_path), exist_ok=True)
+# os.makedirs(os.path.dirname(log_path), exist_ok=True)
 logger = Logger(log_path, logging.DEBUG, __name__).getlog()
 
 
@@ -731,7 +731,7 @@ if __name__ == '__main__':
     # event_graphs = data_integrate(
     #     trace_file, trace_id_file, log_file, alarm_list)
     log_template_miner = get_miner()
-    # log_template_minefaultfree(log_template_miner)
-    log_template_minefaultsuffering(log_template_miner)
+    log_template_minefaultfree(log_template_miner)
+    # log_template_minefaultsuffering(log_template_miner)
     
     

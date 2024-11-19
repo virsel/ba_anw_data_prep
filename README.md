@@ -1,3 +1,10 @@
+## funktionsweise
+
+1. Data integrate  
+- Logs mit Hilfe von Traces logisch zu Graphen verbinden
+- Wenn eine Metrik Schwellwert über/untersteigt wird zum dazugehörigen Pod Graph Node identiziert -> Metrik Alarm als Event wird integriert
+
+
 ## rca with nezha
 https://github.com/IntelligentDDS/Nezha/tree/main
 

@@ -1,0 +1,1333 @@
+[INFO]2024-11-18 17:15:39,950 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:15:54,686 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:16:01,507 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:16:12,313 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:16:17,190 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:16:25,391 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:16:30,958 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:16:40,490 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:16:48,565 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:17:00,852 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:17:08,148 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:17:19,488 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:17:29,632 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:17:45,493 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:17:55,180 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:18:10,459 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:18:19,597 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:18:19,756 log_parsing.py:57: alarm Log Parings Result: {"change_type": "cluster_created", "cluster_id": 213, "cluster_size": 1, "template_mined": "NetworkP90(ms) Service: alarm", "cluster_count": 213}
+[INFO]2024-11-18 17:18:33,989 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:18:42,862 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:18:57,323 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:19:07,042 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:19:22,813 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:19:32,920 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:19:49,160 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:19:58,581 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:20:13,603 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:20:23,375 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:20:38,905 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:20:49,262 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:21:06,302 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:21:17,307 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:21:34,133 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:21:44,974 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:22:02,472 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:22:12,676 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:22:29,059 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:22:39,031 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:22:55,113 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:23:05,090 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:23:21,031 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:23:23,785 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:23:27,558 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:23:29,756 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:23:32,734 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:23:38,574 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:23:47,247 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:23:52,990 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:24:02,006 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:24:11,894 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:24:27,357 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:24:37,163 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:24:52,452 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:25:02,122 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:25:17,864 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:25:27,647 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:25:43,272 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:25:52,573 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:26:07,090 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:26:17,070 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:26:32,974 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:26:43,244 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:26:59,908 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:27:09,897 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:27:25,885 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:27:34,750 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-wckp8', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:27:48,693 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:27:57,047 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-wckp8', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:28:10,543 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:28:19,650 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:28:34,415 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:28:42,743 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:28:56,285 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:29:04,792 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:29:17,680 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:29:25,700 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:29:38,240 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:29:42,821 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:29:49,436 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:29:54,500 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:30:01,929 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:30:11,064 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:30:24,930 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:30:33,987 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:30:48,980 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:30:58,460 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:31:13,446 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:31:22,899 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:31:38,064 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:31:47,574 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:32:02,758 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:32:12,779 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:32:28,881 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:32:38,421 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:32:53,920 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:33:02,946 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:33:17,380 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:33:24,160 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:33:34,575 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:33:41,708 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:33:52,488 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:33:57,294 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:34:05,500 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:34:10,700 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:34:19,440 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:34:27,308 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:34:39,330 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:34:46,932 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:34:58,790 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:35:08,437 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:35:23,603 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:35:32,861 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:35:48,374 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:35:58,460 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:36:14,980 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:36:24,063 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:36:38,613 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:36:48,635 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:37:04,605 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:37:14,645 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:37:30,318 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:37:40,533 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:37:56,466 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:38:06,329 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:38:21,695 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:38:31,777 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:38:48,839 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:38:59,413 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:39:15,958 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:39:25,822 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:39:41,341 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:39:51,368 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:40:07,273 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:40:17,685 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:40:34,149 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:40:43,652 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:40:58,707 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:41:05,679 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:41:16,246 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:41:18,836 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:41:22,441 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:41:28,647 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:41:38,141 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:41:44,294 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:41:53,456 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:42:03,025 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:42:18,900 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:42:28,591 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:42:44,302 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:42:54,430 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:43:10,035 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:43:20,046 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:43:36,134 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:43:45,803 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:44:01,210 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:44:11,639 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:44:28,437 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:44:38,327 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:44:54,125 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:45:03,191 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:45:17,874 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:45:27,776 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:45:43,504 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:45:52,980 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:46:07,984 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:46:16,090 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:46:29,754 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:46:38,075 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:46:51,135 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:46:55,442 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:47:02,403 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:47:05,010 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:47:09,590 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:47:18,962 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-jhwx9', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:47:33,909 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:47:41,644 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-jhwx9', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:47:53,978 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:47:56,804 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:48:01,791 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:48:04,286 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:48:08,672 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:48:18,218 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:48:33,273 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:48:41,913 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:48:55,715 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:49:04,326 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:49:17,646 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:49:25,000 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:49:36,339 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:49:42,594 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:49:52,222 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:49:57,044 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:50:04,130 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:50:13,963 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:50:29,256 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:50:38,638 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:50:54,891 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:51:05,334 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:51:22,023 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:51:31,374 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:51:46,366 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:51:55,667 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:52:10,681 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:52:20,180 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:52:35,364 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:52:44,791 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:52:59,174 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:53:08,136 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:53:22,390 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:53:33,353 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:53:50,810 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:54:00,368 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:54:15,633 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:54:25,812 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:54:42,046 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:54:52,117 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:55:08,227 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:55:17,131 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:55:30,976 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:55:38,730 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:55:50,790 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:56:01,135 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:56:17,717 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:56:27,491 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:56:44,650 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:58:51,491 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:59:06,723 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 17:59:16,280 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 17:59:31,403 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:01:44,193 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:01:59,684 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:02:06,757 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:02:17,114 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:02:22,612 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:02:30,788 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:02:36,318 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:02:45,842 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:02:54,038 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:03:06,586 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:03:14,043 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:03:25,486 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:03:35,505 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:03:51,655 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:04:01,604 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:04:17,488 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:04:26,825 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:04:41,607 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:04:50,796 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:05:05,416 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:05:15,525 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:05:31,869 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:05:42,190 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:05:58,617 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:06:07,981 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:06:22,926 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:06:33,169 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:06:49,606 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:07:00,719 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:07:18,519 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:07:29,554 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:07:46,797 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:07:57,920 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:08:16,027 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:08:26,481 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:08:43,490 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:08:53,613 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:09:09,985 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:09:20,872 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[ERROR]2024-11-18 18:09:28,189 log_parsing.py:78: Cannot find id 214 's template
+[ERROR]2024-11-18 18:09:28,191 log_parsing.py:78: Cannot find id 215 's template
+[ERROR]2024-11-18 18:09:28,192 log_parsing.py:78: Cannot find id 216 's template
+[ERROR]2024-11-18 18:09:28,194 log_parsing.py:78: Cannot find id 217 's template
+[ERROR]2024-11-18 18:09:28,195 log_parsing.py:78: Cannot find id 218 's template
+[ERROR]2024-11-18 18:09:28,195 log_parsing.py:78: Cannot find id 219 's template
+[ERROR]2024-11-18 18:09:28,196 log_parsing.py:78: Cannot find id 220 's template
+[ERROR]2024-11-18 18:09:28,197 log_parsing.py:78: Cannot find id 221 's template
+[ERROR]2024-11-18 18:09:28,197 log_parsing.py:78: Cannot find id 222 's template
+[ERROR]2024-11-18 18:09:28,198 log_parsing.py:78: Cannot find id 223 's template
+[ERROR]2024-11-18 18:09:28,198 log_parsing.py:78: Cannot find id 224 's template
+[ERROR]2024-11-18 18:09:28,199 log_parsing.py:78: Cannot find id 225 's template
+[ERROR]2024-11-18 18:09:28,200 log_parsing.py:78: Cannot find id 226 's template
+[ERROR]2024-11-18 18:09:28,200 log_parsing.py:78: Cannot find id 227 's template
+[ERROR]2024-11-18 18:09:28,201 log_parsing.py:78: Cannot find id 228 's template
+[ERROR]2024-11-18 18:09:28,202 log_parsing.py:78: Cannot find id 229 's template
+[ERROR]2024-11-18 18:09:28,203 log_parsing.py:78: Cannot find id 230 's template
+[ERROR]2024-11-18 18:09:28,203 log_parsing.py:78: Cannot find id 231 's template
+[ERROR]2024-11-18 18:09:28,204 log_parsing.py:78: Cannot find id 232 's template
+[ERROR]2024-11-18 18:09:28,204 log_parsing.py:78: Cannot find id 233 's template
+[ERROR]2024-11-18 18:09:28,205 log_parsing.py:78: Cannot find id 234 's template
+[ERROR]2024-11-18 18:09:28,206 log_parsing.py:78: Cannot find id 235 's template
+[ERROR]2024-11-18 18:09:28,206 log_parsing.py:78: Cannot find id 236 's template
+[ERROR]2024-11-18 18:09:28,207 log_parsing.py:78: Cannot find id 237 's template
+[ERROR]2024-11-18 18:09:28,207 log_parsing.py:78: Cannot find id 238 's template
+[ERROR]2024-11-18 18:09:28,208 log_parsing.py:78: Cannot find id 239 's template
+[ERROR]2024-11-18 18:09:28,208 log_parsing.py:78: Cannot find id 240 's template
+[ERROR]2024-11-18 18:09:28,209 log_parsing.py:78: Cannot find id 241 's template
+[ERROR]2024-11-18 18:09:28,209 log_parsing.py:78: Cannot find id 242 's template
+[ERROR]2024-11-18 18:09:28,210 log_parsing.py:78: Cannot find id 243 's template
+[ERROR]2024-11-18 18:09:28,210 log_parsing.py:78: Cannot find id 244 's template
+[ERROR]2024-11-18 18:09:28,211 log_parsing.py:78: Cannot find id 245 's template
+[ERROR]2024-11-18 18:09:28,211 log_parsing.py:78: Cannot find id 246 's template
+[ERROR]2024-11-18 18:09:28,212 log_parsing.py:78: Cannot find id 247 's template
+[ERROR]2024-11-18 18:09:28,213 log_parsing.py:78: Cannot find id 248 's template
+[ERROR]2024-11-18 18:09:28,213 log_parsing.py:78: Cannot find id 249 's template
+[ERROR]2024-11-18 18:09:28,214 log_parsing.py:78: Cannot find id 250 's template
+[ERROR]2024-11-18 18:09:28,215 log_parsing.py:78: Cannot find id 251 's template
+[ERROR]2024-11-18 18:09:28,215 log_parsing.py:78: Cannot find id 252 's template
+[ERROR]2024-11-18 18:09:28,216 log_parsing.py:78: Cannot find id 253 's template
+[ERROR]2024-11-18 18:09:28,216 log_parsing.py:78: Cannot find id 254 's template
+[ERROR]2024-11-18 18:09:28,217 log_parsing.py:78: Cannot find id 255 's template
+[ERROR]2024-11-18 18:09:28,218 log_parsing.py:78: Cannot find id 256 's template
+[ERROR]2024-11-18 18:09:28,218 log_parsing.py:78: Cannot find id 257 's template
+[ERROR]2024-11-18 18:09:28,219 log_parsing.py:78: Cannot find id 258 's template
+[ERROR]2024-11-18 18:09:28,219 log_parsing.py:78: Cannot find id 259 's template
+[ERROR]2024-11-18 18:09:28,220 log_parsing.py:78: Cannot find id 260 's template
+[ERROR]2024-11-18 18:09:28,221 log_parsing.py:78: Cannot find id 261 's template
+[ERROR]2024-11-18 18:09:28,221 log_parsing.py:78: Cannot find id 262 's template
+[ERROR]2024-11-18 18:09:28,221 log_parsing.py:78: Cannot find id 263 's template
+[ERROR]2024-11-18 18:09:28,222 log_parsing.py:78: Cannot find id 264 's template
+[ERROR]2024-11-18 18:09:28,223 log_parsing.py:78: Cannot find id 265 's template
+[ERROR]2024-11-18 18:09:28,223 log_parsing.py:78: Cannot find id 266 's template
+[ERROR]2024-11-18 18:09:28,224 log_parsing.py:78: Cannot find id 267 's template
+[ERROR]2024-11-18 18:09:28,225 log_parsing.py:78: Cannot find id 268 's template
+[ERROR]2024-11-18 18:09:28,225 log_parsing.py:78: Cannot find id 269 's template
+[ERROR]2024-11-18 18:09:28,226 log_parsing.py:78: Cannot find id 270 's template
+[ERROR]2024-11-18 18:09:28,226 log_parsing.py:78: Cannot find id 271 's template
+[ERROR]2024-11-18 18:09:28,227 log_parsing.py:78: Cannot find id 272 's template
+[ERROR]2024-11-18 18:09:28,227 log_parsing.py:78: Cannot find id 273 's template
+[ERROR]2024-11-18 18:09:28,228 log_parsing.py:78: Cannot find id 274 's template
+[ERROR]2024-11-18 18:09:28,228 log_parsing.py:78: Cannot find id 275 's template
+[ERROR]2024-11-18 18:09:28,229 log_parsing.py:78: Cannot find id 276 's template
+[ERROR]2024-11-18 18:09:28,229 log_parsing.py:78: Cannot find id 277 's template
+[ERROR]2024-11-18 18:09:28,230 log_parsing.py:78: Cannot find id 278 's template
+[ERROR]2024-11-18 18:09:28,230 log_parsing.py:78: Cannot find id 279 's template
+[ERROR]2024-11-18 18:09:28,231 log_parsing.py:78: Cannot find id 280 's template
+[ERROR]2024-11-18 18:09:28,232 log_parsing.py:78: Cannot find id 281 's template
+[ERROR]2024-11-18 18:09:28,232 log_parsing.py:78: Cannot find id 282 's template
+[ERROR]2024-11-18 18:09:28,233 log_parsing.py:78: Cannot find id 283 's template
+[ERROR]2024-11-18 18:09:28,233 log_parsing.py:78: Cannot find id 284 's template
+[ERROR]2024-11-18 18:09:28,234 log_parsing.py:78: Cannot find id 285 's template
+[ERROR]2024-11-18 18:09:28,235 log_parsing.py:78: Cannot find id 286 's template
+[ERROR]2024-11-18 18:09:28,235 log_parsing.py:78: Cannot find id 287 's template
+[ERROR]2024-11-18 18:09:28,236 log_parsing.py:78: Cannot find id 288 's template
+[ERROR]2024-11-18 18:09:28,237 log_parsing.py:78: Cannot find id 289 's template
+[ERROR]2024-11-18 18:09:28,237 log_parsing.py:78: Cannot find id 290 's template
+[ERROR]2024-11-18 18:09:28,238 log_parsing.py:78: Cannot find id 291 's template
+[ERROR]2024-11-18 18:09:28,238 log_parsing.py:78: Cannot find id 292 's template
+[ERROR]2024-11-18 18:09:28,239 log_parsing.py:78: Cannot find id 293 's template
+[ERROR]2024-11-18 18:09:28,239 log_parsing.py:78: Cannot find id 294 's template
+[ERROR]2024-11-18 18:09:28,240 log_parsing.py:78: Cannot find id 295 's template
+[ERROR]2024-11-18 18:09:28,241 log_parsing.py:78: Cannot find id 296 's template
+[ERROR]2024-11-18 18:09:28,241 log_parsing.py:78: Cannot find id 297 's template
+[ERROR]2024-11-18 18:09:28,242 log_parsing.py:78: Cannot find id 298 's template
+[ERROR]2024-11-18 18:09:28,242 log_parsing.py:78: Cannot find id 299 's template
+[ERROR]2024-11-18 18:09:28,243 log_parsing.py:78: Cannot find id 300 's template
+[ERROR]2024-11-18 18:09:28,243 log_parsing.py:78: Cannot find id 301 's template
+[ERROR]2024-11-18 18:09:28,244 log_parsing.py:78: Cannot find id 302 's template
+[ERROR]2024-11-18 18:09:28,245 log_parsing.py:78: Cannot find id 303 's template
+[ERROR]2024-11-18 18:09:28,246 log_parsing.py:78: Cannot find id 304 's template
+[ERROR]2024-11-18 18:09:28,246 log_parsing.py:78: Cannot find id 305 's template
+[ERROR]2024-11-18 18:09:28,247 log_parsing.py:78: Cannot find id 306 's template
+[ERROR]2024-11-18 18:09:28,247 log_parsing.py:78: Cannot find id 307 's template
+[ERROR]2024-11-18 18:09:28,248 log_parsing.py:78: Cannot find id 308 's template
+[ERROR]2024-11-18 18:09:28,248 log_parsing.py:78: Cannot find id 309 's template
+[ERROR]2024-11-18 18:09:28,249 log_parsing.py:78: Cannot find id 310 's template
+[ERROR]2024-11-18 18:09:28,249 log_parsing.py:78: Cannot find id 311 's template
+[ERROR]2024-11-18 18:09:28,250 log_parsing.py:78: Cannot find id 312 's template
+[ERROR]2024-11-18 18:09:28,251 log_parsing.py:78: Cannot find id 313 's template
+[ERROR]2024-11-18 18:09:28,251 log_parsing.py:78: Cannot find id 314 's template
+[ERROR]2024-11-18 18:09:28,252 log_parsing.py:78: Cannot find id 315 's template
+[ERROR]2024-11-18 18:09:28,253 log_parsing.py:78: Cannot find id 316 's template
+[ERROR]2024-11-18 18:09:28,253 log_parsing.py:78: Cannot find id 317 's template
+[ERROR]2024-11-18 18:09:28,254 log_parsing.py:78: Cannot find id 318 's template
+[ERROR]2024-11-18 18:09:28,255 log_parsing.py:78: Cannot find id 319 's template
+[ERROR]2024-11-18 18:09:28,255 log_parsing.py:78: Cannot find id 320 's template
+[ERROR]2024-11-18 18:09:28,256 log_parsing.py:78: Cannot find id 321 's template
+[ERROR]2024-11-18 18:09:28,256 log_parsing.py:78: Cannot find id 322 's template
+[ERROR]2024-11-18 18:09:28,257 log_parsing.py:78: Cannot find id 323 's template
+[ERROR]2024-11-18 18:09:28,257 log_parsing.py:78: Cannot find id 324 's template
+[ERROR]2024-11-18 18:09:28,258 log_parsing.py:78: Cannot find id 325 's template
+[ERROR]2024-11-18 18:09:28,258 log_parsing.py:78: Cannot find id 326 's template
+[ERROR]2024-11-18 18:09:28,259 log_parsing.py:78: Cannot find id 327 's template
+[ERROR]2024-11-18 18:09:28,259 log_parsing.py:78: Cannot find id 328 's template
+[ERROR]2024-11-18 18:09:28,260 log_parsing.py:78: Cannot find id 329 's template
+[ERROR]2024-11-18 18:09:28,260 log_parsing.py:78: Cannot find id 330 's template
+[ERROR]2024-11-18 18:09:28,261 log_parsing.py:78: Cannot find id 331 's template
+[ERROR]2024-11-18 18:09:28,261 log_parsing.py:78: Cannot find id 332 's template
+[ERROR]2024-11-18 18:09:28,262 log_parsing.py:78: Cannot find id 333 's template
+[ERROR]2024-11-18 18:09:28,263 log_parsing.py:78: Cannot find id 334 's template
+[ERROR]2024-11-18 18:09:28,263 log_parsing.py:78: Cannot find id 335 's template
+[ERROR]2024-11-18 18:09:28,264 log_parsing.py:78: Cannot find id 336 's template
+[ERROR]2024-11-18 18:09:28,264 log_parsing.py:78: Cannot find id 337 's template
+[ERROR]2024-11-18 18:09:28,265 log_parsing.py:78: Cannot find id 338 's template
+[ERROR]2024-11-18 18:09:28,265 log_parsing.py:78: Cannot find id 339 's template
+[ERROR]2024-11-18 18:09:28,266 log_parsing.py:78: Cannot find id 340 's template
+[ERROR]2024-11-18 18:09:28,267 log_parsing.py:78: Cannot find id 341 's template
+[ERROR]2024-11-18 18:09:28,268 log_parsing.py:78: Cannot find id 342 's template
+[ERROR]2024-11-18 18:09:28,269 log_parsing.py:78: Cannot find id 343 's template
+[ERROR]2024-11-18 18:09:28,269 log_parsing.py:78: Cannot find id 344 's template
+[ERROR]2024-11-18 18:09:28,270 log_parsing.py:78: Cannot find id 345 's template
+[ERROR]2024-11-18 18:09:28,271 log_parsing.py:78: Cannot find id 346 's template
+[ERROR]2024-11-18 18:09:28,271 log_parsing.py:78: Cannot find id 347 's template
+[ERROR]2024-11-18 18:09:28,272 log_parsing.py:78: Cannot find id 348 's template
+[ERROR]2024-11-18 18:09:28,272 log_parsing.py:78: Cannot find id 349 's template
+[ERROR]2024-11-18 18:09:28,273 log_parsing.py:78: Cannot find id 350 's template
+[ERROR]2024-11-18 18:09:28,274 log_parsing.py:78: Cannot find id 351 's template
+[ERROR]2024-11-18 18:09:28,274 log_parsing.py:78: Cannot find id 352 's template
+[ERROR]2024-11-18 18:09:28,275 log_parsing.py:78: Cannot find id 353 's template
+[ERROR]2024-11-18 18:09:28,275 log_parsing.py:78: Cannot find id 354 's template
+[ERROR]2024-11-18 18:09:28,276 log_parsing.py:78: Cannot find id 355 's template
+[ERROR]2024-11-18 18:09:28,276 log_parsing.py:78: Cannot find id 356 's template
+[ERROR]2024-11-18 18:09:28,277 log_parsing.py:78: Cannot find id 357 's template
+[ERROR]2024-11-18 18:09:28,277 log_parsing.py:78: Cannot find id 358 's template
+[ERROR]2024-11-18 18:09:28,278 log_parsing.py:78: Cannot find id 359 's template
+[ERROR]2024-11-18 18:09:28,279 log_parsing.py:78: Cannot find id 360 's template
+[ERROR]2024-11-18 18:09:28,279 log_parsing.py:78: Cannot find id 361 's template
+[ERROR]2024-11-18 18:09:28,280 log_parsing.py:78: Cannot find id 362 's template
+[ERROR]2024-11-18 18:09:28,280 log_parsing.py:78: Cannot find id 363 's template
+[ERROR]2024-11-18 18:09:28,281 log_parsing.py:78: Cannot find id 364 's template
+[ERROR]2024-11-18 18:09:28,282 log_parsing.py:78: Cannot find id 365 's template
+[ERROR]2024-11-18 18:09:28,282 log_parsing.py:78: Cannot find id 366 's template
+[ERROR]2024-11-18 18:09:28,283 log_parsing.py:78: Cannot find id 367 's template
+[ERROR]2024-11-18 18:09:28,283 log_parsing.py:78: Cannot find id 368 's template
+[ERROR]2024-11-18 18:09:28,284 log_parsing.py:78: Cannot find id 369 's template
+[ERROR]2024-11-18 18:09:28,285 log_parsing.py:78: Cannot find id 370 's template
+[ERROR]2024-11-18 18:09:28,286 log_parsing.py:78: Cannot find id 371 's template
+[ERROR]2024-11-18 18:09:28,287 log_parsing.py:78: Cannot find id 372 's template
+[ERROR]2024-11-18 18:09:28,288 log_parsing.py:78: Cannot find id 373 's template
+[ERROR]2024-11-18 18:09:28,288 log_parsing.py:78: Cannot find id 374 's template
+[ERROR]2024-11-18 18:09:28,289 log_parsing.py:78: Cannot find id 375 's template
+[ERROR]2024-11-18 18:09:28,290 log_parsing.py:78: Cannot find id 376 's template
+[ERROR]2024-11-18 18:09:28,290 log_parsing.py:78: Cannot find id 377 's template
+[ERROR]2024-11-18 18:09:28,291 log_parsing.py:78: Cannot find id 378 's template
+[ERROR]2024-11-18 18:09:28,292 log_parsing.py:78: Cannot find id 379 's template
+[ERROR]2024-11-18 18:09:28,292 log_parsing.py:78: Cannot find id 380 's template
+[ERROR]2024-11-18 18:09:28,293 log_parsing.py:78: Cannot find id 381 's template
+[ERROR]2024-11-18 18:09:28,294 log_parsing.py:78: Cannot find id 382 's template
+[ERROR]2024-11-18 18:09:28,295 log_parsing.py:78: Cannot find id 383 's template
+[ERROR]2024-11-18 18:09:28,295 log_parsing.py:78: Cannot find id 384 's template
+[ERROR]2024-11-18 18:09:28,296 log_parsing.py:78: Cannot find id 385 's template
+[ERROR]2024-11-18 18:09:28,296 log_parsing.py:78: Cannot find id 386 's template
+[ERROR]2024-11-18 18:09:28,297 log_parsing.py:78: Cannot find id 387 's template
+[ERROR]2024-11-18 18:09:28,298 log_parsing.py:78: Cannot find id 388 's template
+[ERROR]2024-11-18 18:09:28,298 log_parsing.py:78: Cannot find id 389 's template
+[ERROR]2024-11-18 18:09:28,299 log_parsing.py:78: Cannot find id 390 's template
+[ERROR]2024-11-18 18:09:28,300 log_parsing.py:78: Cannot find id 391 's template
+[ERROR]2024-11-18 18:09:28,300 log_parsing.py:78: Cannot find id 392 's template
+[ERROR]2024-11-18 18:09:28,301 log_parsing.py:78: Cannot find id 393 's template
+[ERROR]2024-11-18 18:09:28,302 log_parsing.py:78: Cannot find id 394 's template
+[ERROR]2024-11-18 18:09:28,303 log_parsing.py:78: Cannot find id 395 's template
+[ERROR]2024-11-18 18:09:28,303 log_parsing.py:78: Cannot find id 396 's template
+[ERROR]2024-11-18 18:09:28,304 log_parsing.py:78: Cannot find id 397 's template
+[ERROR]2024-11-18 18:09:28,305 log_parsing.py:78: Cannot find id 398 's template
+[ERROR]2024-11-18 18:09:28,305 log_parsing.py:78: Cannot find id 399 's template
+[ERROR]2024-11-18 18:09:28,306 log_parsing.py:78: Cannot find id 400 's template
+[ERROR]2024-11-18 18:09:28,306 log_parsing.py:78: Cannot find id 401 's template
+[ERROR]2024-11-18 18:09:28,307 log_parsing.py:78: Cannot find id 402 's template
+[ERROR]2024-11-18 18:09:28,307 log_parsing.py:78: Cannot find id 403 's template
+[ERROR]2024-11-18 18:09:28,308 log_parsing.py:78: Cannot find id 404 's template
+[ERROR]2024-11-18 18:09:28,309 log_parsing.py:78: Cannot find id 405 's template
+[ERROR]2024-11-18 18:09:28,309 log_parsing.py:78: Cannot find id 406 's template
+[ERROR]2024-11-18 18:09:28,310 log_parsing.py:78: Cannot find id 407 's template
+[ERROR]2024-11-18 18:09:28,310 log_parsing.py:78: Cannot find id 408 's template
+[ERROR]2024-11-18 18:09:28,311 log_parsing.py:78: Cannot find id 409 's template
+[ERROR]2024-11-18 18:09:28,312 log_parsing.py:78: Cannot find id 410 's template
+[ERROR]2024-11-18 18:09:28,312 log_parsing.py:78: Cannot find id 411 's template
+[ERROR]2024-11-18 18:09:28,313 log_parsing.py:78: Cannot find id 412 's template
+[ERROR]2024-11-18 18:09:28,313 log_parsing.py:78: Cannot find id 413 's template
+[ERROR]2024-11-18 18:09:28,314 log_parsing.py:78: Cannot find id 414 's template
+[ERROR]2024-11-18 18:09:28,315 log_parsing.py:78: Cannot find id 415 's template
+[ERROR]2024-11-18 18:09:28,315 log_parsing.py:78: Cannot find id 416 's template
+[ERROR]2024-11-18 18:09:28,316 log_parsing.py:78: Cannot find id 417 's template
+[ERROR]2024-11-18 18:09:28,317 log_parsing.py:78: Cannot find id 418 's template
+[ERROR]2024-11-18 18:09:28,318 log_parsing.py:78: Cannot find id 419 's template
+[ERROR]2024-11-18 18:09:28,319 log_parsing.py:78: Cannot find id 420 's template
+[ERROR]2024-11-18 18:09:28,319 log_parsing.py:78: Cannot find id 421 's template
+[ERROR]2024-11-18 18:09:28,320 log_parsing.py:78: Cannot find id 422 's template
+[ERROR]2024-11-18 18:09:28,320 log_parsing.py:78: Cannot find id 423 's template
+[ERROR]2024-11-18 18:09:28,321 log_parsing.py:78: Cannot find id 424 's template
+[ERROR]2024-11-18 18:09:28,321 log_parsing.py:78: Cannot find id 425 's template
+[ERROR]2024-11-18 18:09:28,322 log_parsing.py:78: Cannot find id 426 's template
+[ERROR]2024-11-18 18:09:28,323 log_parsing.py:78: Cannot find id 427 's template
+[ERROR]2024-11-18 18:09:28,323 log_parsing.py:78: Cannot find id 428 's template
+[ERROR]2024-11-18 18:09:28,324 log_parsing.py:78: Cannot find id 429 's template
+[ERROR]2024-11-18 18:09:28,325 log_parsing.py:78: Cannot find id 430 's template
+[ERROR]2024-11-18 18:09:28,326 log_parsing.py:78: Cannot find id 431 's template
+[ERROR]2024-11-18 18:09:28,326 log_parsing.py:78: Cannot find id 432 's template
+[ERROR]2024-11-18 18:09:28,327 log_parsing.py:78: Cannot find id 433 's template
+[ERROR]2024-11-18 18:09:28,328 log_parsing.py:78: Cannot find id 434 's template
+[ERROR]2024-11-18 18:09:28,328 log_parsing.py:78: Cannot find id 435 's template
+[ERROR]2024-11-18 18:09:28,329 log_parsing.py:78: Cannot find id 436 's template
+[ERROR]2024-11-18 18:09:28,329 log_parsing.py:78: Cannot find id 437 's template
+[ERROR]2024-11-18 18:09:28,330 log_parsing.py:78: Cannot find id 438 's template
+[ERROR]2024-11-18 18:09:28,330 log_parsing.py:78: Cannot find id 439 's template
+[ERROR]2024-11-18 18:09:28,331 log_parsing.py:78: Cannot find id 440 's template
+[ERROR]2024-11-18 18:09:28,332 log_parsing.py:78: Cannot find id 441 's template
+[ERROR]2024-11-18 18:09:28,332 log_parsing.py:78: Cannot find id 442 's template
+[ERROR]2024-11-18 18:09:28,333 log_parsing.py:78: Cannot find id 443 's template
+[ERROR]2024-11-18 18:09:28,334 log_parsing.py:78: Cannot find id 444 's template
+[ERROR]2024-11-18 18:09:28,334 log_parsing.py:78: Cannot find id 445 's template
+[ERROR]2024-11-18 18:09:28,335 log_parsing.py:78: Cannot find id 446 's template
+[ERROR]2024-11-18 18:09:28,336 log_parsing.py:78: Cannot find id 447 's template
+[ERROR]2024-11-18 18:09:28,337 log_parsing.py:78: Cannot find id 448 's template
+[ERROR]2024-11-18 18:09:28,337 log_parsing.py:78: Cannot find id 449 's template
+[ERROR]2024-11-18 18:09:28,338 log_parsing.py:78: Cannot find id 450 's template
+[ERROR]2024-11-18 18:09:28,338 log_parsing.py:78: Cannot find id 451 's template
+[ERROR]2024-11-18 18:09:28,339 log_parsing.py:78: Cannot find id 452 's template
+[ERROR]2024-11-18 18:09:28,340 log_parsing.py:78: Cannot find id 453 's template
+[ERROR]2024-11-18 18:09:28,340 log_parsing.py:78: Cannot find id 454 's template
+[ERROR]2024-11-18 18:09:28,341 log_parsing.py:78: Cannot find id 455 's template
+[ERROR]2024-11-18 18:09:28,341 log_parsing.py:78: Cannot find id 456 's template
+[ERROR]2024-11-18 18:09:28,342 log_parsing.py:78: Cannot find id 457 's template
+[ERROR]2024-11-18 18:09:28,343 log_parsing.py:78: Cannot find id 458 's template
+[ERROR]2024-11-18 18:09:28,343 log_parsing.py:78: Cannot find id 459 's template
+[ERROR]2024-11-18 18:09:28,343 log_parsing.py:78: Cannot find id 460 's template
+[ERROR]2024-11-18 18:09:28,344 log_parsing.py:78: Cannot find id 461 's template
+[ERROR]2024-11-18 18:09:28,345 log_parsing.py:78: Cannot find id 462 's template
+[ERROR]2024-11-18 18:09:28,346 log_parsing.py:78: Cannot find id 463 's template
+[ERROR]2024-11-18 18:09:28,346 log_parsing.py:78: Cannot find id 464 's template
+[ERROR]2024-11-18 18:09:28,347 log_parsing.py:78: Cannot find id 465 's template
+[ERROR]2024-11-18 18:09:28,347 log_parsing.py:78: Cannot find id 466 's template
+[ERROR]2024-11-18 18:09:28,348 log_parsing.py:78: Cannot find id 467 's template
+[ERROR]2024-11-18 18:09:28,349 log_parsing.py:78: Cannot find id 468 's template
+[ERROR]2024-11-18 18:09:28,349 log_parsing.py:78: Cannot find id 469 's template
+[ERROR]2024-11-18 18:09:28,350 log_parsing.py:78: Cannot find id 470 's template
+[ERROR]2024-11-18 18:09:28,350 log_parsing.py:78: Cannot find id 471 's template
+[ERROR]2024-11-18 18:09:28,351 log_parsing.py:78: Cannot find id 472 's template
+[ERROR]2024-11-18 18:09:28,352 log_parsing.py:78: Cannot find id 473 's template
+[ERROR]2024-11-18 18:09:28,352 log_parsing.py:78: Cannot find id 474 's template
+[ERROR]2024-11-18 18:09:28,353 log_parsing.py:78: Cannot find id 475 's template
+[ERROR]2024-11-18 18:09:28,354 log_parsing.py:78: Cannot find id 476 's template
+[ERROR]2024-11-18 18:09:28,354 log_parsing.py:78: Cannot find id 477 's template
+[ERROR]2024-11-18 18:09:28,355 log_parsing.py:78: Cannot find id 478 's template
+[ERROR]2024-11-18 18:09:28,355 log_parsing.py:78: Cannot find id 479 's template
+[ERROR]2024-11-18 18:09:28,356 log_parsing.py:78: Cannot find id 480 's template
+[ERROR]2024-11-18 18:09:28,356 log_parsing.py:78: Cannot find id 481 's template
+[ERROR]2024-11-18 18:09:28,357 log_parsing.py:78: Cannot find id 482 's template
+[ERROR]2024-11-18 18:09:28,358 log_parsing.py:78: Cannot find id 483 's template
+[ERROR]2024-11-18 18:09:28,358 log_parsing.py:78: Cannot find id 484 's template
+[ERROR]2024-11-18 18:09:28,359 log_parsing.py:78: Cannot find id 485 's template
+[ERROR]2024-11-18 18:09:28,360 log_parsing.py:78: Cannot find id 486 's template
+[ERROR]2024-11-18 18:09:28,360 log_parsing.py:78: Cannot find id 487 's template
+[ERROR]2024-11-18 18:09:28,361 log_parsing.py:78: Cannot find id 488 's template
+[ERROR]2024-11-18 18:09:28,361 log_parsing.py:78: Cannot find id 489 's template
+[ERROR]2024-11-18 18:09:28,362 log_parsing.py:78: Cannot find id 490 's template
+[ERROR]2024-11-18 18:09:28,362 log_parsing.py:78: Cannot find id 491 's template
+[ERROR]2024-11-18 18:09:28,363 log_parsing.py:78: Cannot find id 492 's template
+[ERROR]2024-11-18 18:09:28,364 log_parsing.py:78: Cannot find id 493 's template
+[ERROR]2024-11-18 18:09:28,364 log_parsing.py:78: Cannot find id 494 's template
+[ERROR]2024-11-18 18:09:28,365 log_parsing.py:78: Cannot find id 495 's template
+[ERROR]2024-11-18 18:09:28,366 log_parsing.py:78: Cannot find id 496 's template
+[ERROR]2024-11-18 18:09:28,366 log_parsing.py:78: Cannot find id 497 's template
+[ERROR]2024-11-18 18:09:28,367 log_parsing.py:78: Cannot find id 498 's template
+[ERROR]2024-11-18 18:09:28,367 log_parsing.py:78: Cannot find id 499 's template
+[ERROR]2024-11-18 18:09:28,368 log_parsing.py:78: Cannot find id 500 's template
+[ERROR]2024-11-18 18:09:28,369 log_parsing.py:78: Cannot find id 501 's template
+[ERROR]2024-11-18 18:09:28,369 log_parsing.py:78: Cannot find id 502 's template
+[ERROR]2024-11-18 18:09:28,370 log_parsing.py:78: Cannot find id 503 's template
+[ERROR]2024-11-18 18:09:28,371 log_parsing.py:78: Cannot find id 504 's template
+[ERROR]2024-11-18 18:09:28,371 log_parsing.py:78: Cannot find id 505 's template
+[ERROR]2024-11-18 18:09:28,372 log_parsing.py:78: Cannot find id 506 's template
+[ERROR]2024-11-18 18:09:28,372 log_parsing.py:78: Cannot find id 507 's template
+[ERROR]2024-11-18 18:09:28,373 log_parsing.py:78: Cannot find id 508 's template
+[ERROR]2024-11-18 18:09:28,373 log_parsing.py:78: Cannot find id 509 's template
+[ERROR]2024-11-18 18:09:28,374 log_parsing.py:78: Cannot find id 510 's template
+[ERROR]2024-11-18 18:09:28,374 log_parsing.py:78: Cannot find id 511 's template
+[ERROR]2024-11-18 18:09:28,375 log_parsing.py:78: Cannot find id 512 's template
+[ERROR]2024-11-18 18:09:28,376 log_parsing.py:78: Cannot find id 513 's template
+[ERROR]2024-11-18 18:09:28,377 log_parsing.py:78: Cannot find id 514 's template
+[ERROR]2024-11-18 18:09:28,377 log_parsing.py:78: Cannot find id 515 's template
+[ERROR]2024-11-18 18:09:28,378 log_parsing.py:78: Cannot find id 516 's template
+[ERROR]2024-11-18 18:09:28,378 log_parsing.py:78: Cannot find id 517 's template
+[ERROR]2024-11-18 18:09:28,379 log_parsing.py:78: Cannot find id 518 's template
+[ERROR]2024-11-18 18:09:28,379 log_parsing.py:78: Cannot find id 519 's template
+[ERROR]2024-11-18 18:09:28,380 log_parsing.py:78: Cannot find id 520 's template
+[ERROR]2024-11-18 18:09:28,380 log_parsing.py:78: Cannot find id 521 's template
+[ERROR]2024-11-18 18:09:28,380 log_parsing.py:78: Cannot find id 522 's template
+[ERROR]2024-11-18 18:09:28,381 log_parsing.py:78: Cannot find id 523 's template
+[ERROR]2024-11-18 18:09:28,382 log_parsing.py:78: Cannot find id 524 's template
+[ERROR]2024-11-18 18:09:28,382 log_parsing.py:78: Cannot find id 525 's template
+[ERROR]2024-11-18 18:09:28,383 log_parsing.py:78: Cannot find id 526 's template
+[ERROR]2024-11-18 18:09:28,383 log_parsing.py:78: Cannot find id 527 's template
+[ERROR]2024-11-18 18:09:28,384 log_parsing.py:78: Cannot find id 528 's template
+[ERROR]2024-11-18 18:09:28,384 log_parsing.py:78: Cannot find id 529 's template
+[ERROR]2024-11-18 18:09:28,385 log_parsing.py:78: Cannot find id 530 's template
+[ERROR]2024-11-18 18:09:28,386 log_parsing.py:78: Cannot find id 531 's template
+[ERROR]2024-11-18 18:09:28,387 log_parsing.py:78: Cannot find id 532 's template
+[ERROR]2024-11-18 18:09:28,388 log_parsing.py:78: Cannot find id 533 's template
+[ERROR]2024-11-18 18:09:28,388 log_parsing.py:78: Cannot find id 534 's template
+[ERROR]2024-11-18 18:09:28,389 log_parsing.py:78: Cannot find id 535 's template
+[ERROR]2024-11-18 18:09:28,389 log_parsing.py:78: Cannot find id 536 's template
+[ERROR]2024-11-18 18:09:28,390 log_parsing.py:78: Cannot find id 537 's template
+[ERROR]2024-11-18 18:09:28,391 log_parsing.py:78: Cannot find id 538 's template
+[ERROR]2024-11-18 18:09:28,391 log_parsing.py:78: Cannot find id 539 's template
+[ERROR]2024-11-18 18:09:28,392 log_parsing.py:78: Cannot find id 540 's template
+[ERROR]2024-11-18 18:09:28,392 log_parsing.py:78: Cannot find id 541 's template
+[ERROR]2024-11-18 18:09:28,393 log_parsing.py:78: Cannot find id 542 's template
+[ERROR]2024-11-18 18:09:28,393 log_parsing.py:78: Cannot find id 543 's template
+[ERROR]2024-11-18 18:09:28,394 log_parsing.py:78: Cannot find id 544 's template
+[ERROR]2024-11-18 18:09:28,399 log_parsing.py:78: Cannot find id 545 's template
+[ERROR]2024-11-18 18:09:28,400 log_parsing.py:78: Cannot find id 546 's template
+[ERROR]2024-11-18 18:09:28,401 log_parsing.py:78: Cannot find id 547 's template
+[ERROR]2024-11-18 18:09:28,402 log_parsing.py:78: Cannot find id 548 's template
+[ERROR]2024-11-18 18:09:28,403 log_parsing.py:78: Cannot find id 549 's template
+[ERROR]2024-11-18 18:09:28,404 log_parsing.py:78: Cannot find id 550 's template
+[ERROR]2024-11-18 18:09:28,405 log_parsing.py:78: Cannot find id 551 's template
+[ERROR]2024-11-18 18:09:28,406 log_parsing.py:78: Cannot find id 552 's template
+[ERROR]2024-11-18 18:09:28,407 log_parsing.py:78: Cannot find id 553 's template
+[ERROR]2024-11-18 18:09:28,408 log_parsing.py:78: Cannot find id 554 's template
+[ERROR]2024-11-18 18:09:28,409 log_parsing.py:78: Cannot find id 555 's template
+[ERROR]2024-11-18 18:09:28,409 log_parsing.py:78: Cannot find id 556 's template
+[ERROR]2024-11-18 18:09:28,410 log_parsing.py:78: Cannot find id 557 's template
+[ERROR]2024-11-18 18:09:28,411 log_parsing.py:78: Cannot find id 558 's template
+[ERROR]2024-11-18 18:09:28,412 log_parsing.py:78: Cannot find id 559 's template
+[ERROR]2024-11-18 18:09:28,412 log_parsing.py:78: Cannot find id 560 's template
+[ERROR]2024-11-18 18:09:28,413 log_parsing.py:78: Cannot find id 561 's template
+[ERROR]2024-11-18 18:09:28,414 log_parsing.py:78: Cannot find id 562 's template
+[ERROR]2024-11-18 18:09:28,415 log_parsing.py:78: Cannot find id 563 's template
+[ERROR]2024-11-18 18:09:28,415 log_parsing.py:78: Cannot find id 564 's template
+[ERROR]2024-11-18 18:09:28,416 log_parsing.py:78: Cannot find id 565 's template
+[ERROR]2024-11-18 18:09:28,417 log_parsing.py:78: Cannot find id 566 's template
+[ERROR]2024-11-18 18:09:28,417 log_parsing.py:78: Cannot find id 567 's template
+[ERROR]2024-11-18 18:09:28,418 log_parsing.py:78: Cannot find id 568 's template
+[ERROR]2024-11-18 18:09:28,419 log_parsing.py:78: Cannot find id 569 's template
+[ERROR]2024-11-18 18:09:28,419 log_parsing.py:78: Cannot find id 570 's template
+[ERROR]2024-11-18 18:09:28,420 log_parsing.py:78: Cannot find id 571 's template
+[ERROR]2024-11-18 18:09:28,421 log_parsing.py:78: Cannot find id 572 's template
+[ERROR]2024-11-18 18:09:28,421 log_parsing.py:78: Cannot find id 573 's template
+[ERROR]2024-11-18 18:09:28,422 log_parsing.py:78: Cannot find id 574 's template
+[ERROR]2024-11-18 18:09:28,422 log_parsing.py:78: Cannot find id 575 's template
+[ERROR]2024-11-18 18:09:28,423 log_parsing.py:78: Cannot find id 576 's template
+[ERROR]2024-11-18 18:09:28,423 log_parsing.py:78: Cannot find id 577 's template
+[ERROR]2024-11-18 18:09:28,424 log_parsing.py:78: Cannot find id 578 's template
+[ERROR]2024-11-18 18:09:28,424 log_parsing.py:78: Cannot find id 579 's template
+[ERROR]2024-11-18 18:09:28,425 log_parsing.py:78: Cannot find id 580 's template
+[ERROR]2024-11-18 18:09:28,425 log_parsing.py:78: Cannot find id 581 's template
+[ERROR]2024-11-18 18:09:28,426 log_parsing.py:78: Cannot find id 582 's template
+[ERROR]2024-11-18 18:09:28,427 log_parsing.py:78: Cannot find id 583 's template
+[ERROR]2024-11-18 18:09:28,427 log_parsing.py:78: Cannot find id 584 's template
+[ERROR]2024-11-18 18:09:28,428 log_parsing.py:78: Cannot find id 585 's template
+[ERROR]2024-11-18 18:09:28,428 log_parsing.py:78: Cannot find id 586 's template
+[ERROR]2024-11-18 18:09:28,429 log_parsing.py:78: Cannot find id 587 's template
+[ERROR]2024-11-18 18:09:28,430 log_parsing.py:78: Cannot find id 588 's template
+[ERROR]2024-11-18 18:09:28,430 log_parsing.py:78: Cannot find id 589 's template
+[ERROR]2024-11-18 18:09:28,431 log_parsing.py:78: Cannot find id 590 's template
+[ERROR]2024-11-18 18:09:28,431 log_parsing.py:78: Cannot find id 591 's template
+[ERROR]2024-11-18 18:09:28,432 log_parsing.py:78: Cannot find id 592 's template
+[ERROR]2024-11-18 18:09:28,433 log_parsing.py:78: Cannot find id 593 's template
+[ERROR]2024-11-18 18:09:28,433 log_parsing.py:78: Cannot find id 594 's template
+[ERROR]2024-11-18 18:09:28,434 log_parsing.py:78: Cannot find id 595 's template
+[ERROR]2024-11-18 18:09:28,434 log_parsing.py:78: Cannot find id 596 's template
+[ERROR]2024-11-18 18:09:28,435 log_parsing.py:78: Cannot find id 597 's template
+[ERROR]2024-11-18 18:09:28,436 log_parsing.py:78: Cannot find id 598 's template
+[ERROR]2024-11-18 18:09:28,437 log_parsing.py:78: Cannot find id 599 's template
+[ERROR]2024-11-18 18:09:28,437 log_parsing.py:78: Cannot find id 600 's template
+[ERROR]2024-11-18 18:09:28,438 log_parsing.py:78: Cannot find id 601 's template
+[ERROR]2024-11-18 18:09:28,439 log_parsing.py:78: Cannot find id 602 's template
+[ERROR]2024-11-18 18:09:28,440 log_parsing.py:78: Cannot find id 603 's template
+[ERROR]2024-11-18 18:09:28,440 log_parsing.py:78: Cannot find id 604 's template
+[ERROR]2024-11-18 18:09:28,441 log_parsing.py:78: Cannot find id 605 's template
+[ERROR]2024-11-18 18:09:28,441 log_parsing.py:78: Cannot find id 606 's template
+[ERROR]2024-11-18 18:09:28,442 log_parsing.py:78: Cannot find id 607 's template
+[ERROR]2024-11-18 18:09:28,442 log_parsing.py:78: Cannot find id 608 's template
+[ERROR]2024-11-18 18:09:28,443 log_parsing.py:78: Cannot find id 609 's template
+[ERROR]2024-11-18 18:09:28,444 log_parsing.py:78: Cannot find id 610 's template
+[ERROR]2024-11-18 18:09:28,444 log_parsing.py:78: Cannot find id 611 's template
+[ERROR]2024-11-18 18:09:28,445 log_parsing.py:78: Cannot find id 612 's template
+[ERROR]2024-11-18 18:09:28,445 log_parsing.py:78: Cannot find id 613 's template
+[ERROR]2024-11-18 18:09:28,446 log_parsing.py:78: Cannot find id 614 's template
+[ERROR]2024-11-18 18:09:28,447 log_parsing.py:78: Cannot find id 615 's template
+[ERROR]2024-11-18 18:09:28,448 log_parsing.py:78: Cannot find id 616 's template
+[ERROR]2024-11-18 18:09:28,448 log_parsing.py:78: Cannot find id 617 's template
+[ERROR]2024-11-18 18:09:28,449 log_parsing.py:78: Cannot find id 618 's template
+[ERROR]2024-11-18 18:09:28,449 log_parsing.py:78: Cannot find id 619 's template
+[ERROR]2024-11-18 18:09:28,450 log_parsing.py:78: Cannot find id 620 's template
+[ERROR]2024-11-18 18:09:28,450 log_parsing.py:78: Cannot find id 621 's template
+[ERROR]2024-11-18 18:09:28,451 log_parsing.py:78: Cannot find id 622 's template
+[ERROR]2024-11-18 18:09:28,451 log_parsing.py:78: Cannot find id 623 's template
+[ERROR]2024-11-18 18:09:28,452 log_parsing.py:78: Cannot find id 624 's template
+[ERROR]2024-11-18 18:09:28,453 log_parsing.py:78: Cannot find id 625 's template
+[ERROR]2024-11-18 18:09:28,453 log_parsing.py:78: Cannot find id 626 's template
+[ERROR]2024-11-18 18:09:28,454 log_parsing.py:78: Cannot find id 627 's template
+[ERROR]2024-11-18 18:09:28,455 log_parsing.py:78: Cannot find id 628 's template
+[ERROR]2024-11-18 18:09:28,455 log_parsing.py:78: Cannot find id 629 's template
+[ERROR]2024-11-18 18:09:28,456 log_parsing.py:78: Cannot find id 630 's template
+[ERROR]2024-11-18 18:09:28,457 log_parsing.py:78: Cannot find id 631 's template
+[ERROR]2024-11-18 18:09:28,457 log_parsing.py:78: Cannot find id 632 's template
+[ERROR]2024-11-18 18:09:28,458 log_parsing.py:78: Cannot find id 633 's template
+[ERROR]2024-11-18 18:09:28,459 log_parsing.py:78: Cannot find id 634 's template
+[ERROR]2024-11-18 18:09:28,459 log_parsing.py:78: Cannot find id 635 's template
+[ERROR]2024-11-18 18:09:28,460 log_parsing.py:78: Cannot find id 636 's template
+[ERROR]2024-11-18 18:09:28,460 log_parsing.py:78: Cannot find id 637 's template
+[ERROR]2024-11-18 18:09:28,461 log_parsing.py:78: Cannot find id 638 's template
+[ERROR]2024-11-18 18:09:28,461 log_parsing.py:78: Cannot find id 639 's template
+[ERROR]2024-11-18 18:09:28,462 log_parsing.py:78: Cannot find id 640 's template
+[ERROR]2024-11-18 18:09:28,463 log_parsing.py:78: Cannot find id 641 's template
+[ERROR]2024-11-18 18:09:28,463 log_parsing.py:78: Cannot find id 642 's template
+[ERROR]2024-11-18 18:09:28,464 log_parsing.py:78: Cannot find id 643 's template
+[ERROR]2024-11-18 18:09:28,464 log_parsing.py:78: Cannot find id 644 's template
+[ERROR]2024-11-18 18:09:28,465 log_parsing.py:78: Cannot find id 645 's template
+[ERROR]2024-11-18 18:09:28,465 log_parsing.py:78: Cannot find id 646 's template
+[ERROR]2024-11-18 18:09:28,466 log_parsing.py:78: Cannot find id 647 's template
+[ERROR]2024-11-18 18:09:28,466 log_parsing.py:78: Cannot find id 648 's template
+[ERROR]2024-11-18 18:09:28,467 log_parsing.py:78: Cannot find id 649 's template
+[ERROR]2024-11-18 18:09:28,468 log_parsing.py:78: Cannot find id 650 's template
+[ERROR]2024-11-18 18:09:28,468 log_parsing.py:78: Cannot find id 651 's template
+[ERROR]2024-11-18 18:09:28,469 log_parsing.py:78: Cannot find id 652 's template
+[ERROR]2024-11-18 18:09:28,470 log_parsing.py:78: Cannot find id 653 's template
+[ERROR]2024-11-18 18:09:28,470 log_parsing.py:78: Cannot find id 654 's template
+[ERROR]2024-11-18 18:09:28,471 log_parsing.py:78: Cannot find id 655 's template
+[ERROR]2024-11-18 18:09:28,471 log_parsing.py:78: Cannot find id 656 's template
+[ERROR]2024-11-18 18:09:28,472 log_parsing.py:78: Cannot find id 657 's template
+[ERROR]2024-11-18 18:09:28,473 log_parsing.py:78: Cannot find id 658 's template
+[ERROR]2024-11-18 18:09:28,473 log_parsing.py:78: Cannot find id 659 's template
+[ERROR]2024-11-18 18:09:28,474 log_parsing.py:78: Cannot find id 660 's template
+[ERROR]2024-11-18 18:09:28,474 log_parsing.py:78: Cannot find id 661 's template
+[ERROR]2024-11-18 18:09:28,475 log_parsing.py:78: Cannot find id 662 's template
+[ERROR]2024-11-18 18:09:28,475 log_parsing.py:78: Cannot find id 663 's template
+[ERROR]2024-11-18 18:09:28,476 log_parsing.py:78: Cannot find id 664 's template
+[ERROR]2024-11-18 18:09:28,476 log_parsing.py:78: Cannot find id 665 's template
+[ERROR]2024-11-18 18:09:28,477 log_parsing.py:78: Cannot find id 666 's template
+[ERROR]2024-11-18 18:09:28,477 log_parsing.py:78: Cannot find id 667 's template
+[ERROR]2024-11-18 18:09:28,478 log_parsing.py:78: Cannot find id 668 's template
+[ERROR]2024-11-18 18:09:28,479 log_parsing.py:78: Cannot find id 669 's template
+[ERROR]2024-11-18 18:09:28,479 log_parsing.py:78: Cannot find id 670 's template
+[ERROR]2024-11-18 18:09:28,480 log_parsing.py:78: Cannot find id 671 's template
+[ERROR]2024-11-18 18:09:28,480 log_parsing.py:78: Cannot find id 672 's template
+[ERROR]2024-11-18 18:09:28,481 log_parsing.py:78: Cannot find id 673 's template
+[ERROR]2024-11-18 18:09:28,481 log_parsing.py:78: Cannot find id 674 's template
+[ERROR]2024-11-18 18:09:28,482 log_parsing.py:78: Cannot find id 675 's template
+[ERROR]2024-11-18 18:09:28,483 log_parsing.py:78: Cannot find id 676 's template
+[ERROR]2024-11-18 18:09:28,483 log_parsing.py:78: Cannot find id 677 's template
+[ERROR]2024-11-18 18:09:28,484 log_parsing.py:78: Cannot find id 678 's template
+[ERROR]2024-11-18 18:09:28,484 log_parsing.py:78: Cannot find id 679 's template
+[ERROR]2024-11-18 18:09:28,485 log_parsing.py:78: Cannot find id 680 's template
+[ERROR]2024-11-18 18:09:28,485 log_parsing.py:78: Cannot find id 681 's template
+[ERROR]2024-11-18 18:09:28,486 log_parsing.py:78: Cannot find id 682 's template
+[ERROR]2024-11-18 18:09:28,487 log_parsing.py:78: Cannot find id 683 's template
+[ERROR]2024-11-18 18:09:28,488 log_parsing.py:78: Cannot find id 684 's template
+[ERROR]2024-11-18 18:09:28,488 log_parsing.py:78: Cannot find id 685 's template
+[ERROR]2024-11-18 18:09:28,489 log_parsing.py:78: Cannot find id 686 's template
+[ERROR]2024-11-18 18:09:28,490 log_parsing.py:78: Cannot find id 687 's template
+[ERROR]2024-11-18 18:09:28,490 log_parsing.py:78: Cannot find id 688 's template
+[ERROR]2024-11-18 18:09:28,491 log_parsing.py:78: Cannot find id 689 's template
+[ERROR]2024-11-18 18:09:28,492 log_parsing.py:78: Cannot find id 690 's template
+[ERROR]2024-11-18 18:09:28,492 log_parsing.py:78: Cannot find id 691 's template
+[ERROR]2024-11-18 18:09:28,493 log_parsing.py:78: Cannot find id 692 's template
+[ERROR]2024-11-18 18:09:28,495 log_parsing.py:78: Cannot find id 693 's template
+[ERROR]2024-11-18 18:09:28,496 log_parsing.py:78: Cannot find id 694 's template
+[ERROR]2024-11-18 18:09:28,496 log_parsing.py:78: Cannot find id 695 's template
+[ERROR]2024-11-18 18:09:28,497 log_parsing.py:78: Cannot find id 696 's template
+[ERROR]2024-11-18 18:09:28,498 log_parsing.py:78: Cannot find id 697 's template
+[ERROR]2024-11-18 18:09:28,498 log_parsing.py:78: Cannot find id 698 's template
+[ERROR]2024-11-18 18:09:28,499 log_parsing.py:78: Cannot find id 699 's template
+[ERROR]2024-11-18 18:09:28,500 log_parsing.py:78: Cannot find id 700 's template
+[ERROR]2024-11-18 18:09:28,500 log_parsing.py:78: Cannot find id 701 's template
+[ERROR]2024-11-18 18:09:28,501 log_parsing.py:78: Cannot find id 702 's template
+[ERROR]2024-11-18 18:09:28,502 log_parsing.py:78: Cannot find id 703 's template
+[ERROR]2024-11-18 18:09:28,503 log_parsing.py:78: Cannot find id 704 's template
+[ERROR]2024-11-18 18:09:28,503 log_parsing.py:78: Cannot find id 705 's template
+[ERROR]2024-11-18 18:09:28,504 log_parsing.py:78: Cannot find id 706 's template
+[ERROR]2024-11-18 18:09:28,504 log_parsing.py:78: Cannot find id 707 's template
+[ERROR]2024-11-18 18:09:28,505 log_parsing.py:78: Cannot find id 708 's template
+[ERROR]2024-11-18 18:09:28,505 log_parsing.py:78: Cannot find id 709 's template
+[ERROR]2024-11-18 18:09:28,506 log_parsing.py:78: Cannot find id 710 's template
+[ERROR]2024-11-18 18:09:28,506 log_parsing.py:78: Cannot find id 711 's template
+[ERROR]2024-11-18 18:09:28,507 log_parsing.py:78: Cannot find id 712 's template
+[ERROR]2024-11-18 18:09:28,508 log_parsing.py:78: Cannot find id 713 's template
+[ERROR]2024-11-18 18:09:28,508 log_parsing.py:78: Cannot find id 714 's template
+[ERROR]2024-11-18 18:09:28,509 log_parsing.py:78: Cannot find id 715 's template
+[ERROR]2024-11-18 18:09:28,510 log_parsing.py:78: Cannot find id 716 's template
+[ERROR]2024-11-18 18:09:28,510 log_parsing.py:78: Cannot find id 717 's template
+[ERROR]2024-11-18 18:09:28,511 log_parsing.py:78: Cannot find id 718 's template
+[ERROR]2024-11-18 18:09:28,511 log_parsing.py:78: Cannot find id 719 's template
+[ERROR]2024-11-18 18:09:28,512 log_parsing.py:78: Cannot find id 720 's template
+[ERROR]2024-11-18 18:09:28,513 log_parsing.py:78: Cannot find id 721 's template
+[ERROR]2024-11-18 18:09:28,513 log_parsing.py:78: Cannot find id 722 's template
+[ERROR]2024-11-18 18:09:28,514 log_parsing.py:78: Cannot find id 723 's template
+[ERROR]2024-11-18 18:09:28,514 log_parsing.py:78: Cannot find id 724 's template
+[ERROR]2024-11-18 18:09:28,515 log_parsing.py:78: Cannot find id 725 's template
+[ERROR]2024-11-18 18:09:28,515 log_parsing.py:78: Cannot find id 726 's template
+[ERROR]2024-11-18 18:09:28,515 log_parsing.py:78: Cannot find id 727 's template
+[ERROR]2024-11-18 18:09:28,516 log_parsing.py:78: Cannot find id 728 's template
+[ERROR]2024-11-18 18:09:28,517 log_parsing.py:78: Cannot find id 729 's template
+[ERROR]2024-11-18 18:09:28,518 log_parsing.py:78: Cannot find id 730 's template
+[ERROR]2024-11-18 18:09:28,518 log_parsing.py:78: Cannot find id 731 's template
+[ERROR]2024-11-18 18:09:28,519 log_parsing.py:78: Cannot find id 732 's template
+[ERROR]2024-11-18 18:09:28,519 log_parsing.py:78: Cannot find id 733 's template
+[ERROR]2024-11-18 18:09:28,520 log_parsing.py:78: Cannot find id 734 's template
+[ERROR]2024-11-18 18:09:28,521 log_parsing.py:78: Cannot find id 735 's template
+[ERROR]2024-11-18 18:09:28,521 log_parsing.py:78: Cannot find id 736 's template
+[ERROR]2024-11-18 18:09:28,522 log_parsing.py:78: Cannot find id 737 's template
+[ERROR]2024-11-18 18:09:28,522 log_parsing.py:78: Cannot find id 738 's template
+[ERROR]2024-11-18 18:09:28,523 log_parsing.py:78: Cannot find id 739 's template
+[ERROR]2024-11-18 18:09:28,523 log_parsing.py:78: Cannot find id 740 's template
+[ERROR]2024-11-18 18:09:28,524 log_parsing.py:78: Cannot find id 741 's template
+[ERROR]2024-11-18 18:09:28,525 log_parsing.py:78: Cannot find id 742 's template
+[ERROR]2024-11-18 18:09:28,525 log_parsing.py:78: Cannot find id 743 's template
+[ERROR]2024-11-18 18:09:28,526 log_parsing.py:78: Cannot find id 744 's template
+[ERROR]2024-11-18 18:09:28,526 log_parsing.py:78: Cannot find id 745 's template
+[ERROR]2024-11-18 18:09:28,527 log_parsing.py:78: Cannot find id 746 's template
+[ERROR]2024-11-18 18:09:28,527 log_parsing.py:78: Cannot find id 747 's template
+[ERROR]2024-11-18 18:09:28,528 log_parsing.py:78: Cannot find id 748 's template
+[ERROR]2024-11-18 18:09:28,529 log_parsing.py:78: Cannot find id 749 's template
+[ERROR]2024-11-18 18:09:28,529 log_parsing.py:78: Cannot find id 750 's template
+[ERROR]2024-11-18 18:09:28,530 log_parsing.py:78: Cannot find id 751 's template
+[ERROR]2024-11-18 18:09:28,530 log_parsing.py:78: Cannot find id 752 's template
+[ERROR]2024-11-18 18:09:28,531 log_parsing.py:78: Cannot find id 753 's template
+[ERROR]2024-11-18 18:09:28,532 log_parsing.py:78: Cannot find id 754 's template
+[ERROR]2024-11-18 18:09:28,532 log_parsing.py:78: Cannot find id 755 's template
+[ERROR]2024-11-18 18:09:28,532 log_parsing.py:78: Cannot find id 756 's template
+[ERROR]2024-11-18 18:09:28,533 log_parsing.py:78: Cannot find id 757 's template
+[ERROR]2024-11-18 18:09:28,534 log_parsing.py:78: Cannot find id 758 's template
+[ERROR]2024-11-18 18:09:28,535 log_parsing.py:78: Cannot find id 759 's template
+[ERROR]2024-11-18 18:09:28,535 log_parsing.py:78: Cannot find id 760 's template
+[ERROR]2024-11-18 18:09:28,536 log_parsing.py:78: Cannot find id 761 's template
+[ERROR]2024-11-18 18:09:28,536 log_parsing.py:78: Cannot find id 762 's template
+[ERROR]2024-11-18 18:09:28,537 log_parsing.py:78: Cannot find id 763 's template
+[ERROR]2024-11-18 18:09:28,537 log_parsing.py:78: Cannot find id 764 's template
+[ERROR]2024-11-18 18:09:28,538 log_parsing.py:78: Cannot find id 765 's template
+[ERROR]2024-11-18 18:09:28,539 log_parsing.py:78: Cannot find id 766 's template
+[ERROR]2024-11-18 18:09:28,539 log_parsing.py:78: Cannot find id 767 's template
+[ERROR]2024-11-18 18:09:28,540 log_parsing.py:78: Cannot find id 768 's template
+[ERROR]2024-11-18 18:09:28,543 log_parsing.py:78: Cannot find id 769 's template
+[ERROR]2024-11-18 18:09:28,544 log_parsing.py:78: Cannot find id 770 's template
+[ERROR]2024-11-18 18:09:28,545 log_parsing.py:78: Cannot find id 771 's template
+[ERROR]2024-11-18 18:09:28,546 log_parsing.py:78: Cannot find id 772 's template
+[ERROR]2024-11-18 18:09:28,547 log_parsing.py:78: Cannot find id 773 's template
+[ERROR]2024-11-18 18:09:28,549 log_parsing.py:78: Cannot find id 774 's template
+[ERROR]2024-11-18 18:09:28,551 log_parsing.py:78: Cannot find id 775 's template
+[ERROR]2024-11-18 18:09:28,551 log_parsing.py:78: Cannot find id 776 's template
+[ERROR]2024-11-18 18:09:28,553 log_parsing.py:78: Cannot find id 777 's template
+[ERROR]2024-11-18 18:09:28,553 log_parsing.py:78: Cannot find id 778 's template
+[ERROR]2024-11-18 18:09:28,554 log_parsing.py:78: Cannot find id 779 's template
+[ERROR]2024-11-18 18:09:28,555 log_parsing.py:78: Cannot find id 780 's template
+[ERROR]2024-11-18 18:09:28,556 log_parsing.py:78: Cannot find id 781 's template
+[ERROR]2024-11-18 18:09:28,557 log_parsing.py:78: Cannot find id 782 's template
+[ERROR]2024-11-18 18:09:28,558 log_parsing.py:78: Cannot find id 783 's template
+[ERROR]2024-11-18 18:09:28,558 log_parsing.py:78: Cannot find id 784 's template
+[ERROR]2024-11-18 18:09:28,559 log_parsing.py:78: Cannot find id 785 's template
+[ERROR]2024-11-18 18:09:28,559 log_parsing.py:78: Cannot find id 786 's template
+[ERROR]2024-11-18 18:09:28,560 log_parsing.py:78: Cannot find id 787 's template
+[ERROR]2024-11-18 18:09:28,560 log_parsing.py:78: Cannot find id 788 's template
+[ERROR]2024-11-18 18:09:28,561 log_parsing.py:78: Cannot find id 789 's template
+[ERROR]2024-11-18 18:09:28,561 log_parsing.py:78: Cannot find id 790 's template
+[ERROR]2024-11-18 18:09:28,562 log_parsing.py:78: Cannot find id 791 's template
+[ERROR]2024-11-18 18:09:28,562 log_parsing.py:78: Cannot find id 792 's template
+[ERROR]2024-11-18 18:09:28,563 log_parsing.py:78: Cannot find id 793 's template
+[ERROR]2024-11-18 18:09:28,563 log_parsing.py:78: Cannot find id 794 's template
+[ERROR]2024-11-18 18:09:28,564 log_parsing.py:78: Cannot find id 795 's template
+[ERROR]2024-11-18 18:09:28,564 log_parsing.py:78: Cannot find id 796 's template
+[ERROR]2024-11-18 18:09:28,565 log_parsing.py:78: Cannot find id 797 's template
+[ERROR]2024-11-18 18:09:28,565 log_parsing.py:78: Cannot find id 798 's template
+[ERROR]2024-11-18 18:09:28,566 log_parsing.py:78: Cannot find id 799 's template
+[ERROR]2024-11-18 18:09:28,567 log_parsing.py:78: Cannot find id 800 's template
+[ERROR]2024-11-18 18:09:28,567 log_parsing.py:78: Cannot find id 801 's template
+[ERROR]2024-11-18 18:09:28,568 log_parsing.py:78: Cannot find id 802 's template
+[ERROR]2024-11-18 18:09:28,568 log_parsing.py:78: Cannot find id 803 's template
+[ERROR]2024-11-18 18:09:28,569 log_parsing.py:78: Cannot find id 804 's template
+[ERROR]2024-11-18 18:09:28,570 log_parsing.py:78: Cannot find id 805 's template
+[ERROR]2024-11-18 18:09:28,570 log_parsing.py:78: Cannot find id 806 's template
+[ERROR]2024-11-18 18:09:28,571 log_parsing.py:78: Cannot find id 807 's template
+[ERROR]2024-11-18 18:09:28,571 log_parsing.py:78: Cannot find id 808 's template
+[ERROR]2024-11-18 18:09:28,572 log_parsing.py:78: Cannot find id 809 's template
+[ERROR]2024-11-18 18:09:28,572 log_parsing.py:78: Cannot find id 810 's template
+[ERROR]2024-11-18 18:09:28,573 log_parsing.py:78: Cannot find id 811 's template
+[ERROR]2024-11-18 18:09:28,573 log_parsing.py:78: Cannot find id 812 's template
+[ERROR]2024-11-18 18:09:28,574 log_parsing.py:78: Cannot find id 813 's template
+[ERROR]2024-11-18 18:09:28,575 log_parsing.py:78: Cannot find id 814 's template
+[ERROR]2024-11-18 18:09:28,576 log_parsing.py:78: Cannot find id 815 's template
+[ERROR]2024-11-18 18:09:28,576 log_parsing.py:78: Cannot find id 816 's template
+[ERROR]2024-11-18 18:09:28,577 log_parsing.py:78: Cannot find id 817 's template
+[ERROR]2024-11-18 18:09:28,577 log_parsing.py:78: Cannot find id 818 's template
+[ERROR]2024-11-18 18:09:28,578 log_parsing.py:78: Cannot find id 819 's template
+[ERROR]2024-11-18 18:09:28,578 log_parsing.py:78: Cannot find id 820 's template
+[ERROR]2024-11-18 18:09:28,579 log_parsing.py:78: Cannot find id 821 's template
+[ERROR]2024-11-18 18:09:28,580 log_parsing.py:78: Cannot find id 822 's template
+[ERROR]2024-11-18 18:09:28,580 log_parsing.py:78: Cannot find id 823 's template
+[ERROR]2024-11-18 18:09:28,581 log_parsing.py:78: Cannot find id 824 's template
+[ERROR]2024-11-18 18:09:28,581 log_parsing.py:78: Cannot find id 825 's template
+[ERROR]2024-11-18 18:09:28,582 log_parsing.py:78: Cannot find id 826 's template
+[ERROR]2024-11-18 18:09:28,583 log_parsing.py:78: Cannot find id 827 's template
+[ERROR]2024-11-18 18:09:28,583 log_parsing.py:78: Cannot find id 828 's template
+[ERROR]2024-11-18 18:09:28,584 log_parsing.py:78: Cannot find id 829 's template
+[ERROR]2024-11-18 18:09:28,585 log_parsing.py:78: Cannot find id 830 's template
+[ERROR]2024-11-18 18:09:28,585 log_parsing.py:78: Cannot find id 831 's template
+[ERROR]2024-11-18 18:09:28,586 log_parsing.py:78: Cannot find id 832 's template
+[ERROR]2024-11-18 18:09:28,587 log_parsing.py:78: Cannot find id 833 's template
+[ERROR]2024-11-18 18:09:28,587 log_parsing.py:78: Cannot find id 834 's template
+[ERROR]2024-11-18 18:09:28,588 log_parsing.py:78: Cannot find id 835 's template
+[ERROR]2024-11-18 18:09:28,588 log_parsing.py:78: Cannot find id 836 's template
+[ERROR]2024-11-18 18:09:28,589 log_parsing.py:78: Cannot find id 837 's template
+[ERROR]2024-11-18 18:09:28,589 log_parsing.py:78: Cannot find id 838 's template
+[ERROR]2024-11-18 18:09:28,590 log_parsing.py:78: Cannot find id 839 's template
+[ERROR]2024-11-18 18:09:28,590 log_parsing.py:78: Cannot find id 840 's template
+[ERROR]2024-11-18 18:09:28,591 log_parsing.py:78: Cannot find id 841 's template
+[ERROR]2024-11-18 18:09:28,591 log_parsing.py:78: Cannot find id 842 's template
+[ERROR]2024-11-18 18:09:28,592 log_parsing.py:78: Cannot find id 843 's template
+[ERROR]2024-11-18 18:09:28,593 log_parsing.py:78: Cannot find id 844 's template
+[ERROR]2024-11-18 18:09:28,593 log_parsing.py:78: Cannot find id 845 's template
+[ERROR]2024-11-18 18:09:28,594 log_parsing.py:78: Cannot find id 846 's template
+[ERROR]2024-11-18 18:09:28,594 log_parsing.py:78: Cannot find id 847 's template
+[ERROR]2024-11-18 18:09:28,595 log_parsing.py:78: Cannot find id 848 's template
+[ERROR]2024-11-18 18:09:28,595 log_parsing.py:78: Cannot find id 849 's template
+[ERROR]2024-11-18 18:09:28,596 log_parsing.py:78: Cannot find id 850 's template
+[ERROR]2024-11-18 18:09:28,596 log_parsing.py:78: Cannot find id 851 's template
+[ERROR]2024-11-18 18:09:28,597 log_parsing.py:78: Cannot find id 852 's template
+[ERROR]2024-11-18 18:09:28,597 log_parsing.py:78: Cannot find id 853 's template
+[ERROR]2024-11-18 18:09:28,598 log_parsing.py:78: Cannot find id 854 's template
+[ERROR]2024-11-18 18:09:28,599 log_parsing.py:78: Cannot find id 855 's template
+[ERROR]2024-11-18 18:09:28,599 log_parsing.py:78: Cannot find id 856 's template
+[ERROR]2024-11-18 18:09:28,600 log_parsing.py:78: Cannot find id 857 's template
+[ERROR]2024-11-18 18:09:28,600 log_parsing.py:78: Cannot find id 858 's template
+[ERROR]2024-11-18 18:09:28,601 log_parsing.py:78: Cannot find id 859 's template
+[ERROR]2024-11-18 18:09:28,602 log_parsing.py:78: Cannot find id 860 's template
+[ERROR]2024-11-18 18:09:28,602 log_parsing.py:78: Cannot find id 861 's template
+[ERROR]2024-11-18 18:09:28,603 log_parsing.py:78: Cannot find id 862 's template
+[ERROR]2024-11-18 18:09:28,603 log_parsing.py:78: Cannot find id 863 's template
+[ERROR]2024-11-18 18:09:28,604 log_parsing.py:78: Cannot find id 864 's template
+[ERROR]2024-11-18 18:09:28,604 log_parsing.py:78: Cannot find id 865 's template
+[ERROR]2024-11-18 18:09:28,605 log_parsing.py:78: Cannot find id 866 's template
+[ERROR]2024-11-18 18:09:28,606 log_parsing.py:78: Cannot find id 867 's template
+[ERROR]2024-11-18 18:09:28,606 log_parsing.py:78: Cannot find id 868 's template
+[ERROR]2024-11-18 18:09:28,607 log_parsing.py:78: Cannot find id 869 's template
+[ERROR]2024-11-18 18:09:28,607 log_parsing.py:78: Cannot find id 870 's template
+[ERROR]2024-11-18 18:09:28,608 log_parsing.py:78: Cannot find id 871 's template
+[ERROR]2024-11-18 18:09:28,608 log_parsing.py:78: Cannot find id 872 's template
+[ERROR]2024-11-18 18:09:28,609 log_parsing.py:78: Cannot find id 873 's template
+[ERROR]2024-11-18 18:09:28,609 log_parsing.py:78: Cannot find id 874 's template
+[ERROR]2024-11-18 18:09:28,610 log_parsing.py:78: Cannot find id 875 's template
+[ERROR]2024-11-18 18:09:28,610 log_parsing.py:78: Cannot find id 876 's template
+[ERROR]2024-11-18 18:09:28,611 log_parsing.py:78: Cannot find id 877 's template
+[ERROR]2024-11-18 18:09:28,612 log_parsing.py:78: Cannot find id 878 's template
+[ERROR]2024-11-18 18:09:28,612 log_parsing.py:78: Cannot find id 879 's template
+[ERROR]2024-11-18 18:09:28,613 log_parsing.py:78: Cannot find id 880 's template
+[ERROR]2024-11-18 18:09:28,614 log_parsing.py:78: Cannot find id 881 's template
+[ERROR]2024-11-18 18:09:28,614 log_parsing.py:78: Cannot find id 882 's template
+[ERROR]2024-11-18 18:09:28,615 log_parsing.py:78: Cannot find id 883 's template
+[ERROR]2024-11-18 18:09:28,615 log_parsing.py:78: Cannot find id 884 's template
+[ERROR]2024-11-18 18:09:28,616 log_parsing.py:78: Cannot find id 885 's template
+[ERROR]2024-11-18 18:09:28,617 log_parsing.py:78: Cannot find id 886 's template
+[ERROR]2024-11-18 18:09:28,618 log_parsing.py:78: Cannot find id 887 's template
+[ERROR]2024-11-18 18:09:28,618 log_parsing.py:78: Cannot find id 888 's template
+[ERROR]2024-11-18 18:09:28,619 log_parsing.py:78: Cannot find id 889 's template
+[ERROR]2024-11-18 18:09:28,619 log_parsing.py:78: Cannot find id 890 's template
+[ERROR]2024-11-18 18:09:28,620 log_parsing.py:78: Cannot find id 891 's template
+[ERROR]2024-11-18 18:09:28,620 log_parsing.py:78: Cannot find id 892 's template
+[ERROR]2024-11-18 18:09:28,621 log_parsing.py:78: Cannot find id 893 's template
+[ERROR]2024-11-18 18:09:28,621 log_parsing.py:78: Cannot find id 894 's template
+[ERROR]2024-11-18 18:09:28,622 log_parsing.py:78: Cannot find id 895 's template
+[ERROR]2024-11-18 18:09:28,623 log_parsing.py:78: Cannot find id 896 's template
+[ERROR]2024-11-18 18:09:28,623 log_parsing.py:78: Cannot find id 897 's template
+[ERROR]2024-11-18 18:09:28,624 log_parsing.py:78: Cannot find id 898 's template
+[ERROR]2024-11-18 18:09:28,624 log_parsing.py:78: Cannot find id 899 's template
+[ERROR]2024-11-18 18:09:28,625 log_parsing.py:78: Cannot find id 900 's template
+[ERROR]2024-11-18 18:09:28,625 log_parsing.py:78: Cannot find id 901 's template
+[ERROR]2024-11-18 18:09:28,626 log_parsing.py:78: Cannot find id 902 's template
+[ERROR]2024-11-18 18:09:28,626 log_parsing.py:78: Cannot find id 903 's template
+[ERROR]2024-11-18 18:09:28,627 log_parsing.py:78: Cannot find id 904 's template
+[ERROR]2024-11-18 18:09:28,628 log_parsing.py:78: Cannot find id 905 's template
+[ERROR]2024-11-18 18:09:28,628 log_parsing.py:78: Cannot find id 906 's template
+[ERROR]2024-11-18 18:09:28,629 log_parsing.py:78: Cannot find id 907 's template
+[ERROR]2024-11-18 18:09:28,629 log_parsing.py:78: Cannot find id 908 's template
+[ERROR]2024-11-18 18:09:28,630 log_parsing.py:78: Cannot find id 909 's template
+[ERROR]2024-11-18 18:09:28,631 log_parsing.py:78: Cannot find id 910 's template
+[ERROR]2024-11-18 18:09:28,631 log_parsing.py:78: Cannot find id 911 's template
+[ERROR]2024-11-18 18:09:28,632 log_parsing.py:78: Cannot find id 912 's template
+[ERROR]2024-11-18 18:09:28,633 log_parsing.py:78: Cannot find id 913 's template
+[ERROR]2024-11-18 18:09:28,634 log_parsing.py:78: Cannot find id 914 's template
+[ERROR]2024-11-18 18:09:28,635 log_parsing.py:78: Cannot find id 915 's template
+[ERROR]2024-11-18 18:09:28,636 log_parsing.py:78: Cannot find id 916 's template
+[ERROR]2024-11-18 18:09:28,636 log_parsing.py:78: Cannot find id 917 's template
+[ERROR]2024-11-18 18:09:28,637 log_parsing.py:78: Cannot find id 918 's template
+[ERROR]2024-11-18 18:09:28,637 log_parsing.py:78: Cannot find id 919 's template
+[ERROR]2024-11-18 18:09:28,638 log_parsing.py:78: Cannot find id 920 's template
+[ERROR]2024-11-18 18:09:28,639 log_parsing.py:78: Cannot find id 921 's template
+[ERROR]2024-11-18 18:09:28,640 log_parsing.py:78: Cannot find id 922 's template
+[ERROR]2024-11-18 18:09:28,640 log_parsing.py:78: Cannot find id 923 's template
+[ERROR]2024-11-18 18:09:28,641 log_parsing.py:78: Cannot find id 924 's template
+[ERROR]2024-11-18 18:09:28,641 log_parsing.py:78: Cannot find id 925 's template
+[ERROR]2024-11-18 18:09:28,641 log_parsing.py:78: Cannot find id 926 's template
+[ERROR]2024-11-18 18:09:28,642 log_parsing.py:78: Cannot find id 927 's template
+[ERROR]2024-11-18 18:09:28,643 log_parsing.py:78: Cannot find id 928 's template
+[ERROR]2024-11-18 18:09:28,643 log_parsing.py:78: Cannot find id 929 's template
+[ERROR]2024-11-18 18:09:28,644 log_parsing.py:78: Cannot find id 930 's template
+[ERROR]2024-11-18 18:09:28,645 log_parsing.py:78: Cannot find id 931 's template
+[ERROR]2024-11-18 18:09:28,645 log_parsing.py:78: Cannot find id 932 's template
+[ERROR]2024-11-18 18:09:28,646 log_parsing.py:78: Cannot find id 933 's template
+[ERROR]2024-11-18 18:09:28,647 log_parsing.py:78: Cannot find id 934 's template
+[ERROR]2024-11-18 18:09:28,649 log_parsing.py:78: Cannot find id 935 's template
+[ERROR]2024-11-18 18:09:28,651 log_parsing.py:78: Cannot find id 936 's template
+[ERROR]2024-11-18 18:09:28,651 log_parsing.py:78: Cannot find id 937 's template
+[ERROR]2024-11-18 18:09:28,652 log_parsing.py:78: Cannot find id 938 's template
+[ERROR]2024-11-18 18:09:28,653 log_parsing.py:78: Cannot find id 939 's template
+[ERROR]2024-11-18 18:09:28,653 log_parsing.py:78: Cannot find id 940 's template
+[ERROR]2024-11-18 18:09:28,654 log_parsing.py:78: Cannot find id 941 's template
+[ERROR]2024-11-18 18:09:28,655 log_parsing.py:78: Cannot find id 942 's template
+[ERROR]2024-11-18 18:09:28,655 log_parsing.py:78: Cannot find id 943 's template
+[ERROR]2024-11-18 18:09:28,656 log_parsing.py:78: Cannot find id 944 's template
+[ERROR]2024-11-18 18:09:28,656 log_parsing.py:78: Cannot find id 945 's template
+[ERROR]2024-11-18 18:09:28,657 log_parsing.py:78: Cannot find id 946 's template
+[ERROR]2024-11-18 18:09:28,657 log_parsing.py:78: Cannot find id 947 's template
+[ERROR]2024-11-18 18:09:28,658 log_parsing.py:78: Cannot find id 948 's template
+[ERROR]2024-11-18 18:09:28,658 log_parsing.py:78: Cannot find id 949 's template
+[ERROR]2024-11-18 18:09:28,659 log_parsing.py:78: Cannot find id 950 's template
+[ERROR]2024-11-18 18:09:28,660 log_parsing.py:78: Cannot find id 951 's template
+[ERROR]2024-11-18 18:09:28,660 log_parsing.py:78: Cannot find id 952 's template
+[ERROR]2024-11-18 18:09:28,661 log_parsing.py:78: Cannot find id 953 's template
+[ERROR]2024-11-18 18:09:28,662 log_parsing.py:78: Cannot find id 954 's template
+[ERROR]2024-11-18 18:09:28,662 log_parsing.py:78: Cannot find id 955 's template
+[ERROR]2024-11-18 18:09:28,663 log_parsing.py:78: Cannot find id 956 's template
+[ERROR]2024-11-18 18:09:28,664 log_parsing.py:78: Cannot find id 957 's template
+[ERROR]2024-11-18 18:09:28,664 log_parsing.py:78: Cannot find id 958 's template
+[ERROR]2024-11-18 18:09:28,665 log_parsing.py:78: Cannot find id 959 's template
+[ERROR]2024-11-18 18:09:28,665 log_parsing.py:78: Cannot find id 960 's template
+[ERROR]2024-11-18 18:09:28,666 log_parsing.py:78: Cannot find id 961 's template
+[ERROR]2024-11-18 18:09:28,667 log_parsing.py:78: Cannot find id 962 's template
+[ERROR]2024-11-18 18:09:28,667 log_parsing.py:78: Cannot find id 963 's template
+[ERROR]2024-11-18 18:09:28,668 log_parsing.py:78: Cannot find id 964 's template
+[ERROR]2024-11-18 18:09:28,669 log_parsing.py:78: Cannot find id 965 's template
+[ERROR]2024-11-18 18:09:28,669 log_parsing.py:78: Cannot find id 966 's template
+[ERROR]2024-11-18 18:09:28,670 log_parsing.py:78: Cannot find id 967 's template
+[ERROR]2024-11-18 18:09:28,670 log_parsing.py:78: Cannot find id 968 's template
+[ERROR]2024-11-18 18:09:28,671 log_parsing.py:78: Cannot find id 969 's template
+[ERROR]2024-11-18 18:09:28,672 log_parsing.py:78: Cannot find id 970 's template
+[ERROR]2024-11-18 18:09:28,672 log_parsing.py:78: Cannot find id 971 's template
+[ERROR]2024-11-18 18:09:28,673 log_parsing.py:78: Cannot find id 972 's template
+[ERROR]2024-11-18 18:09:28,674 log_parsing.py:78: Cannot find id 973 's template
+[ERROR]2024-11-18 18:09:28,675 log_parsing.py:78: Cannot find id 974 's template
+[ERROR]2024-11-18 18:09:28,675 log_parsing.py:78: Cannot find id 975 's template
+[ERROR]2024-11-18 18:09:28,676 log_parsing.py:78: Cannot find id 976 's template
+[ERROR]2024-11-18 18:09:28,676 log_parsing.py:78: Cannot find id 977 's template
+[ERROR]2024-11-18 18:09:28,677 log_parsing.py:78: Cannot find id 978 's template
+[ERROR]2024-11-18 18:09:28,677 log_parsing.py:78: Cannot find id 979 's template
+[ERROR]2024-11-18 18:09:28,678 log_parsing.py:78: Cannot find id 980 's template
+[ERROR]2024-11-18 18:09:28,678 log_parsing.py:78: Cannot find id 981 's template
+[ERROR]2024-11-18 18:09:28,679 log_parsing.py:78: Cannot find id 982 's template
+[ERROR]2024-11-18 18:09:28,680 log_parsing.py:78: Cannot find id 983 's template
+[ERROR]2024-11-18 18:09:28,680 log_parsing.py:78: Cannot find id 984 's template
+[ERROR]2024-11-18 18:09:28,681 log_parsing.py:78: Cannot find id 985 's template
+[ERROR]2024-11-18 18:09:28,681 log_parsing.py:78: Cannot find id 986 's template
+[ERROR]2024-11-18 18:09:28,682 log_parsing.py:78: Cannot find id 987 's template
+[ERROR]2024-11-18 18:09:28,682 log_parsing.py:78: Cannot find id 988 's template
+[ERROR]2024-11-18 18:09:28,683 log_parsing.py:78: Cannot find id 989 's template
+[ERROR]2024-11-18 18:09:28,684 log_parsing.py:78: Cannot find id 990 's template
+[ERROR]2024-11-18 18:09:28,685 log_parsing.py:78: Cannot find id 991 's template
+[ERROR]2024-11-18 18:09:28,686 log_parsing.py:78: Cannot find id 992 's template
+[ERROR]2024-11-18 18:09:28,687 log_parsing.py:78: Cannot find id 993 's template
+[ERROR]2024-11-18 18:09:28,688 log_parsing.py:78: Cannot find id 994 's template
+[ERROR]2024-11-18 18:09:28,689 log_parsing.py:78: Cannot find id 995 's template
+[ERROR]2024-11-18 18:09:28,690 log_parsing.py:78: Cannot find id 996 's template
+[ERROR]2024-11-18 18:09:28,691 log_parsing.py:78: Cannot find id 997 's template
+[ERROR]2024-11-18 18:09:28,692 log_parsing.py:78: Cannot find id 998 's template
+[ERROR]2024-11-18 18:09:28,693 log_parsing.py:78: Cannot find id 999 's template
+[INFO]2024-11-18 18:09:37,678 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:09:40,543 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:09:44,370 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:09:46,577 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:09:49,613 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:09:55,547 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:10:04,699 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:10:10,612 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:10:19,904 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:10:30,292 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:10:46,317 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:10:56,489 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:11:12,374 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:11:22,402 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:11:38,364 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:11:48,667 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:12:04,807 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:12:14,378 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:12:29,273 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:12:39,418 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:12:55,601 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:13:06,250 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:13:23,306 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:13:33,585 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:13:49,953 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:13:59,839 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-wckp8', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:14:14,375 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:14:23,222 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-wckp8', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:14:37,144 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:14:47,206 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:15:13,944 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:15:23,218 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:15:45,665 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:15:55,010 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:16:13,054 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:16:22,570 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:16:37,187 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:16:42,352 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:16:49,716 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:16:55,027 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:17:08,149 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:17:22,186 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:17:37,490 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:17:54,111 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:18:16,818 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:18:27,043 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:18:52,228 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:19:04,202 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:19:21,097 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:19:31,355 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:20:00,851 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:20:12,062 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:20:28,998 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:20:47,688 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:21:09,395 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:34:07,793 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:34:23,592 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:34:30,619 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:34:41,601 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:34:46,516 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:34:54,957 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:35:00,829 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:35:10,449 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:35:19,003 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:35:31,942 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:35:39,811 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:35:51,724 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:36:02,170 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:36:18,995 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:36:29,097 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:36:45,759 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:36:55,689 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:37:11,017 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:37:20,467 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:37:35,785 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:37:46,183 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:38:03,339 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:38:14,059 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:38:31,000 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:38:40,757 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:38:56,148 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:39:06,374 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:39:22,833 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:39:34,061 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:39:51,726 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:40:02,659 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:40:20,478 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:40:32,011 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:40:50,398 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:41:01,121 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:41:18,523 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:41:28,829 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:41:45,722 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:41:56,241 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:42:12,919 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:42:15,622 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:42:19,509 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:42:21,842 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:42:25,068 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:42:31,306 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:42:40,490 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:42:46,591 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:42:55,824 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:43:06,515 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:43:23,124 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:43:33,589 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:43:50,616 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:44:01,205 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:44:18,352 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:44:29,254 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:44:46,356 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:44:56,069 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:45:11,082 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:45:21,710 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:45:38,435 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:45:49,328 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:46:06,827 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:46:17,233 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:46:33,414 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:46:42,420 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-wckp8', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:46:56,983 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:47:05,583 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-wckp8', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:47:18,902 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:47:28,259 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:47:43,575 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:47:52,090 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:48:05,455 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:48:14,144 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:48:27,503 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:48:35,787 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:48:48,745 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:48:53,500 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:49:00,263 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:49:05,551 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:49:12,975 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:49:22,452 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:49:36,899 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:49:46,137 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:50:01,088 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:50:10,390 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:50:25,421 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:50:34,877 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:50:49,976 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:50:59,592 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:51:15,502 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:51:25,844 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:51:42,072 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:51:52,234 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:52:08,483 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:52:17,910 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:52:33,139 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:52:40,348 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:52:51,319 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:52:58,471 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:53:09,480 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:53:14,555 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:53:22,872 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:53:27,994 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:53:36,982 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:53:45,044 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:53:57,384 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:54:05,499 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'frontend-579b9bff58-t2dbm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:54:18,012 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:54:28,212 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:54:44,575 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:54:54,501 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:55:11,142 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:55:21,910 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:55:39,195 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:55:48,825 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:56:04,268 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:56:14,778 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:56:31,513 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:56:41,711 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'cartservice-579f59597d-wc2lz', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:56:57,526 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:57:07,742 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:57:23,853 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:57:33,539 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:57:48,901 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:57:59,156 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:58:16,445 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:58:26,641 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:58:42,923 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:58:52,532 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:59:08,181 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:59:18,430 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 18:59:35,201 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 18:59:46,065 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:00:04,001 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:00:14,109 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'checkoutservice-578fcf4766-9csqn', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:00:30,259 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:00:37,771 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:00:49,096 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:00:51,965 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:00:56,046 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:01:02,619 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:01:12,936 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:01:19,250 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'currencyservice-cf787dd48-vpjrd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:01:29,053 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:01:39,072 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:01:56,400 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:02:06,775 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:02:23,690 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:02:34,450 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:02:51,216 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:03:02,140 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:03:19,379 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:03:30,087 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:03:46,816 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:03:58,028 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'emailservice-55fdc5b988-f6xth', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:04:15,869 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:04:26,502 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:04:43,468 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:04:53,091 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:05:08,629 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:05:19,197 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:05:36,059 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:05:46,232 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'paymentservice-9cdb6588f-554sm', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:06:02,396 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:06:11,137 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:06:25,925 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:06:34,907 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:06:49,063 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:06:53,725 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:07:01,270 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:07:04,190 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:07:09,123 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:07:19,214 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-jhwx9', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:07:35,484 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:07:43,972 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'productcatalogservice-668d5f85fb-jhwx9', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:07:57,049 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:08:00,151 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:08:05,627 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:08:08,393 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:08:13,039 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:08:23,455 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:08:39,693 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:08:49,155 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:09:04,129 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:09:13,184 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:09:27,614 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:09:35,545 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:09:47,999 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:09:54,757 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:10:05,388 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:10:10,653 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'recommendationservice-6cfdd55578-gfj6q', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:10:18,416 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:10:28,690 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:10:45,458 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:10:56,367 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'NetworkP90(ms)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:11:14,209 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:11:25,672 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:11:43,624 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:11:53,582 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:12:09,900 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:12:20,180 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:12:36,285 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:12:46,848 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}, {'pod': 'shippingservice-7b598fc7d-lmggd', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:13:03,334 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:13:13,053 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:13:27,968 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:13:37,224 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:13:51,575 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:14:03,049 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:14:21,474 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:14:31,600 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:14:47,789 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:14:58,873 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:15:16,462 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:15:26,925 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'MemoryUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:15:44,274 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:15:53,998 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:16:09,015 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:16:17,502 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:16:29,802 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:16:40,286 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:16:59,095 data_integrate.py:629: Data Integrate Complete!
+[INFO]2024-11-18 19:17:09,405 data_integrate.py:568: [{'pod': 'adservice-5f6585d649-fnmft', 'alarm': [{'metric_type': 'CpuUsageRate(%)', 'alarm_flag': True}]}]
+[INFO]2024-11-18 19:17:25,316 data_integrate.py:629: Data Integrate Complete!

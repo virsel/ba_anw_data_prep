@@ -24,7 +24,7 @@ logger = Logger(log_path, logging.DEBUG, __name__).getlog()
 
 
 
-def log_parsing(log, pod, log_template_miner,logrca=True):
+def log_parsing(log, pod, log_template_miner,logrca=False):
     """
     func log_parsing
     parse log by drain3

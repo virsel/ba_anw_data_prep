@@ -143,7 +143,7 @@ def pattern_ranker_fromscore(abnormal_pattern_score, fault_suffering_event_graph
 
     # if many alarm in one service instane, only persistent the deepest one
     move_list = set()
-    alarm_eventids=['184', '92']
+    alarm_eventids=['92', '184', '213']
     for key_pod in deepth_dict.keys():
         pod_events = deepth_dict[key_pod]
             # Filter keys that contain any of the target ids

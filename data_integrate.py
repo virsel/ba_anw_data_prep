@@ -732,6 +732,6 @@ if __name__ == '__main__':
     #     trace_file, trace_id_file, log_file, alarm_list)
     log_template_miner = get_miner()
     log_template_minefaultfree(log_template_miner)
-    # log_template_minefaultsuffering(log_template_miner)
+    log_template_minefaultsuffering(log_template_miner)
     
     

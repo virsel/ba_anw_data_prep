@@ -86,8 +86,6 @@ def abnormal_pattern_ranker(normal_pattern_dict, abnormal_pattern_dict, min_scor
     for item in move_list:
         score_dict.pop(item)
 
-    score_dict = sorted(score_dict, reverse=True)
-
     return score_dict
 
 def abnormal_pattern_ranker_custom(normal_pattern_dict, abnormal_pattern_dict, min_diff=2):

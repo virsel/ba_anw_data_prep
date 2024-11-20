@@ -6,6 +6,7 @@ import time
 import tqdm
 from config import Config
 from datetime import datetime, timedelta
+from pattern_ranker import abnormal_pattern_ranker
 
 log_path = dirname(__file__) + '/log/' + str(datetime.now().strftime(
     '%Y-%m-%d')) + '_nezha.log'
@@ -88,27 +89,110 @@ def abnormal_pattern_ranker_custom(normal_pattern_dict, abnormal_pattern_dict):
 
 global_abnormal_patterns = {}
 
-def pattern_ranker_custom(fault_free_pattern, fault_suffering_event_graphs, fault_suffering_pattern, log_template_miner, topk=10, min_diff=1):
-    actual_comparedto_faultfree = abnormal_pattern_ranker_custom(
-        fault_free_pattern, fault_suffering_pattern)
-    error_eventids = [185, 187, 188, 189, 201, 204, 205, 207, 208, 209]
+def pattern_ranker_custom(fault_free_pattern, fault_free_event_graphs, fault_suffering_pattern, log_template_miner, alarm_list, topk=10, min_score=0.67):
+    abnormal_pattern_score_dict = abnormal_pattern_ranker(
+        fault_free_pattern, fault_suffering_pattern, min_score)
+    abnormal_pattern_score = sorted(abnormal_pattern_score_dict, reverse=True)
     
-    patterns_noerror =  {
-        k: v for k, v in actual_comparedto_faultfree.items() 
-        if not any(str(id_) in k.split('_') for id_ in error_eventids)
-    }
+    normal_pattern_score_dict = abnormal_pattern_ranker(
+        fault_suffering_pattern, fault_free_pattern, min_score)
     
-    patterns_error =  {
-        k: v for k, v in actual_comparedto_faultfree.items() 
-        if any(str(id_) in k.split('_') for id_ in error_eventids)
-    }
+    move_list = set()
+    for key in normal_pattern_score_dict.keys():
+        # logger.info("%s %s %s %s" % (key, from_id_to_template(int(key.split("_")[0])), from_id_to_template(
+        #     int(key.split("_")[1])), value))
+        # only consider the root of child graph
+        log_var = from_id_to_template(int(key.split("_")[1]),log_template_miner)
+        if "Cpu" not in log_var and "Network" not in log_var and "Memory" not in log_var:
+            for key1 in normal_pattern_score_dict.keys():
+                if int(key.split("_")[0]) == int(key1.split("_")[1]) and normal_pattern_score_dict[key] <= normal_pattern_score_dict[key1]:
+                    # logger.info("move key %s because it has root key %s" %
+                    #             (key, key1))
+                    move_list.add(key)
+    for item in move_list:
+        normal_pattern_score_dict.pop(item)
+        
+    result_list = get_resultlist(normal_pattern_score_dict, fault_free_event_graphs, alarm_list)[:10]
+    
+    result_list = add_actual_pattern2result(result_list, abnormal_pattern_score)
+    
+    return result_list
 
-    reuslts_noerror = pattern_ranker_fromscore(patterns_noerror, fault_suffering_event_graphs, log_template_miner, topk)
-    reuslts_error = pattern_ranker_fromscore(patterns_error, fault_suffering_event_graphs, log_template_miner, topk)
-    reuslts_noerror = extract_expected_events(reuslts_noerror, fault_free_pattern)
-    reuslts_error = extract_expected_events(reuslts_error, fault_free_pattern)
+
+def add_actual_pattern2result(result_list, abnormal_pattern_score):
+    result_len = len(result_list)
     
-    return reuslts_noerror[0:topk], reuslts_error
+    for i in range(result_len):
+        # is alarm pattern
+        if any([t in result_list[i]["events"] for t in ['197', '198', '199']]):
+            # do nothing
+            continue
+        else:
+            for item in abnormal_pattern_score:
+                if result_list[i]["events"].split("_")[0] == item.split("_")[0] and result_list[i]["events"].split("_")[1] != item.split("_")[1]:
+                    result_list[i]["events_actual"] = item
+                    break
+    return result_list
+
+
+def get_resultlist(normal_pattern_score, normal_event_graphs, alarm_list):
+    result_list = []
+    deepth_dict = {}
+    for key, value in normal_pattern_score.items():
+        deepth, pod = get_event_depth_pod(normal_event_graphs, key)
+        if pod not in deepth_dict:
+            deepth_dict[pod] = deepth
+        elif deepth_dict[pod] < deepth:
+            deepth_dict[pod] = deepth
+
+        if pod == "":
+            pod = "frontend-579b9bff58-t2dbm"
+            deepth = 1
+        alarm_flag = False
+        if len(alarm_list) > 0:
+            for i in range(len(alarm_list)):
+                item = alarm_list[i]
+                if item["pod"] == pod:
+                    result_list.append({"events": key, "score": value,
+                                        "deepth": deepth, "pod": pod, "resource_alert": item["alarm"][0]["metric_type"]})
+                    alarm_flag = True
+                    break
+        if alarm_flag == False:
+            result_list.append({"events": key, "score": value,
+                                "deepth": deepth, "pod": pod})
+
+    # if many alarm in one service instane, only persistent the deepest one
+    move_list = set()
+    for item in alarm_list:
+        if item["pod"] in deepth_dict.keys():
+            max_deep = deepth_dict[item["pod"]]
+            mv_flag = False
+            for i in range(len(result_list)):
+                item1 = result_list[i]
+                if "resource" in item1.keys():
+                    if item1["pod"] == item["pod"] and item1["resource"] == item["alarm"][0]["metric_type"]:
+                        if max_deep > item1["deepth"]:
+                            move_list.add(i)
+                        elif max_deep == item1["deepth"] and mv_flag == True:
+                            move_list.add(i)
+                        else:
+                            mv_flag = True
+
+    move_list = list(move_list)
+    move_list.reverse()
+    try:
+        for item in move_list:
+            result_list.pop(item)
+    except Exception as e:
+        pass
+        logger.error("Catch an exception: %s", e)
+        pass
+
+    # if score is the same, deeper is prefer
+    result_list = sorted(result_list, key=lambda i: (
+        abs(i['score']), i['deepth']), reverse=True)    
+    return result_list
+
 
 def pattern_ranker_fromscore(abnormal_pattern_score, fault_suffering_event_graphs, log_template_miner, topk=10):
     move_list = set()

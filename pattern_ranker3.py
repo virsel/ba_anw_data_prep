@@ -6,6 +6,7 @@ import time
 import tqdm
 from config import Config
 from datetime import datetime, timedelta
+from pattern_ranker import abnormal_pattern_ranker
 
 log_path = dirname(__file__) + '/log/' + str(datetime.now().strftime(
     '%Y-%m-%d')) + '_nezha.log'
@@ -63,7 +64,18 @@ def get_event_depth_pod(normal_event_graphs, event_pair):
 
     return maxdepth, event_pod
 
-def abnormal_pattern_ranker(normal_pattern_dict, abnormal_pattern_dict, min_score=0.67):
+def extract_expected_events(results, fault_free_pattern):
+    for r in results:
+        key = r['events']
+        for key_faultfree in fault_free_pattern.keys():
+            if key.split('_')[0] == key_faultfree.split('_')[0]:
+                if key.split('_')[1] != key_faultfree.split('_')[1]:
+                    if not any([r_entry['events'] == key_faultfree for r_entry in results]):
+                        r['events_expected'] = key_faultfree
+                break
+    return results
+
+def abnormal_pattern_ranker_moreoften(normal_pattern_dict, abnormal_pattern_dict, min_score=0.67):
     score_dict = {}
     for key in abnormal_pattern_dict.keys():
         if abnormal_pattern_dict[key] > 5:
@@ -88,71 +100,59 @@ def abnormal_pattern_ranker(normal_pattern_dict, abnormal_pattern_dict, min_scor
 
     return score_dict
 
-def abnormal_pattern_ranker_custom(normal_pattern_dict, abnormal_pattern_dict, min_diff=2):
-    score_dict = {}
-    for key in abnormal_pattern_dict.keys():
-        if key in normal_pattern_dict.keys():
-            diff_value = normal_pattern_dict[key] - abnormal_pattern_dict[key]
-            if abs(diff_value) >= min_diff:
-                score_dict[key] = diff_value
-        elif abnormal_pattern_dict[key] >= min_diff:
-            score_dict[key] = abnormal_pattern_dict[key]
 
-    return score_dict
-
-global_abnormal_patterns = {}
-
-
-def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, log_template_miner,topk=10, min_score=0.67):
-    rca_path = Config.fault_suffering_data_path
-    abnormal_pattern_dict, _, alarm_list = get_pattern(abnormal_time, rca_path,log_template_miner)
-    abnormal_pattern_score = abnormal_pattern_ranker(
-        normal_pattern_dict, abnormal_pattern_dict, min_score)
-    score_dict = {}
-    for key in normal_pattern_dict.keys():
-        if normal_pattern_dict[key] > 5:
-            if key not in score_dict.keys():
-                score_dict[key] = 0
-            if key in abnormal_pattern_dict.keys():
-                score_dict[key] = 1.0 * normal_pattern_dict[key] / \
-                    (abnormal_pattern_dict[key] + normal_pattern_dict[key])
-                if score_dict[key] < 0.5:
-                    score_dict[key] = 1.0 - score_dict[key]
-                # print(abnormal_pattern_dict[key],
-                #       normal_pattern_dict[key], score_dict[key])
-            else:
-                score_dict[key] = 1.0
-                # print(normal_pattern_dict[key], score_dict[key])
-
+def pattern_ranker_custom(fault_free_pattern, fault_free_event_graphs, fault_suffering_pattern, log_template_miner, alarm_list, topk=10, min_diff=0.67, inhealthy_moreoften=True):
+    abnormal_pattern_score_dict = abnormal_pattern_ranker_moreoften(
+        fault_free_pattern, fault_suffering_pattern, min_diff)
+    abnormal_pattern_score = sorted(abnormal_pattern_score_dict, reverse=True)
+    
+    normal_pattern_score_dict = abnormal_pattern_ranker_moreoften(
+        fault_suffering_pattern, fault_free_pattern, min_diff)
+    
     move_list = set()
-    for key, value in score_dict.items():
-        # only consider score > 0.66, i.e., 1 / 1 + 0.5
-        if float(value) < min_score:
-            # logger.info("move key %s because score %s < 0.66" % (key, value))
-            move_list.add(key)
-    for item in move_list:
-        score_dict.pop(item)
-
-    # logger.info("Old Score List: %s" % score_dict)
-
-    move_list = set()
-    for key in score_dict.keys():
+    for key in normal_pattern_score_dict.keys():
         # logger.info("%s %s %s %s" % (key, from_id_to_template(int(key.split("_")[0])), from_id_to_template(
         #     int(key.split("_")[1])), value))
         # only consider the root of child graph
         log_var = from_id_to_template(int(key.split("_")[1]),log_template_miner)
         if "Cpu" not in log_var and "Network" not in log_var and "Memory" not in log_var:
-            for key1 in score_dict.keys():
-                if int(key.split("_")[0]) == int(key1.split("_")[1]) and score_dict[key] <= score_dict[key1]:
+            for key1 in normal_pattern_score_dict.keys():
+                if int(key.split("_")[0]) == int(key1.split("_")[1]) and normal_pattern_score_dict[key] <= normal_pattern_score_dict[key1]:
                     # logger.info("move key %s because it has root key %s" %
                     #             (key, key1))
                     move_list.add(key)
     for item in move_list:
-        score_dict.pop(item)
+        normal_pattern_score_dict.pop(item)
+        
+    events_keyname = "events_expected" if inhealthy_moreoften else "events_actual"
+    eventsalt_keyname = "events_actual" if inhealthy_moreoften else "events_expected"
+    result_list = get_resultlist(normal_pattern_score_dict, fault_free_event_graphs, alarm_list, events_keyname)[:10]
+    
+    result_list = add_actual_pattern2result(result_list, abnormal_pattern_score, events_keyname, eventsalt_keyname)
+    
+    return result_list
 
+
+def add_actual_pattern2result(result_list, abnormal_pattern_score, events_keyname="events_expected", eventsalt_keyname="events_actual"):
+    result_len = len(result_list)
+    
+    for i in range(result_len):
+        # is alarm pattern
+        if any([t in result_list[i][events_keyname] for t in ['197', '198', '199']]):
+            # do nothing
+            continue
+        else:
+            for item in abnormal_pattern_score:
+                if result_list[i][events_keyname].split("_")[0] == item.split("_")[0] and result_list[i][events_keyname].split("_")[1] != item.split("_")[1]:
+                    result_list[i][eventsalt_keyname] = item
+                    break
+    return result_list
+
+
+def get_resultlist(normal_pattern_score, normal_event_graphs, alarm_list, events_keyname="events_expected"):
     result_list = []
     deepth_dict = {}
-    for key, value in score_dict.items():
+    for key, value in normal_pattern_score.items():
         deepth, pod = get_event_depth_pod(normal_event_graphs, key)
         if pod not in deepth_dict:
             deepth_dict[pod] = deepth
@@ -167,12 +167,12 @@ def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, log_
             for i in range(len(alarm_list)):
                 item = alarm_list[i]
                 if item["pod"] == pod:
-                    result_list.append({"events": key, "score": value,
-                                        "deepth": deepth, "pod": pod, "resource": item["alarm"][0]["metric_type"]})
+                    result_list.append({events_keyname: key, "score": value,
+                                        "deepth": deepth, "pod": pod, "resource_alert": item["alarm"][0]["metric_type"]})
                     alarm_flag = True
                     break
         if alarm_flag == False:
-            result_list.append({"events": key, "score": value,
+            result_list.append({events_keyname: key, "score": value,
                                 "deepth": deepth, "pod": pod})
 
     # if many alarm in one service instane, only persistent the deepest one
@@ -183,8 +183,8 @@ def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, log_
             mv_flag = False
             for i in range(len(result_list)):
                 item1 = result_list[i]
-                if "resource" in item1.keys():
-                    if item1["pod"] == item["pod"] and item1["resource"] == item["alarm"][0]["metric_type"]:
+                if "resource_alert" in item1.keys():
+                    if item1["pod"] == item["pod"] and item1["resource_alert"] == item["alarm"][0]["metric_type"]:
                         if max_deep > item1["deepth"]:
                             move_list.add(i)
                         elif max_deep == item1["deepth"] and mv_flag == True:
@@ -204,34 +204,9 @@ def pattern_ranker(normal_pattern_dict, normal_event_graphs, abnormal_time, log_
 
     # if score is the same, deeper is prefer
     result_list = sorted(result_list, key=lambda i: (
-        i['score'], i['deepth']), reverse=True)
+        abs(i['score']), i['deepth']), reverse=True)    
+    return result_list
 
-    logger.info("Soted Result List: %s" % result_list)
-
-    # for key, value in range(len(score_dict)):
-    #     logger.info("%s %s %s %s %s" % (key, from_id_to_template(int(key.split("_")[0])), from_id_to_template(
-    #         int(key.split("_")[1])), value["score"], value["deepth"]))
-    return result_list, abnormal_pattern_score
-
-def pattern_ranker_custom(fault_free_pattern, fault_suffering_event_graphs, fault_suffering_pattern, log_template_miner, topk=10, min_diff=1):
-    abnormal_pattern_score = abnormal_pattern_ranker_custom(
-        fault_free_pattern, fault_suffering_pattern, min_diff)
-    error_eventids = [185, 187, 188, 189, 201, 204, 205, 207, 208, 209]
-    
-    patterns_noerror =  {
-        k: v for k, v in abnormal_pattern_score.items() 
-        if not any(str(id_) in k.split('_') for id_ in error_eventids)
-    }
-    
-    patterns_error =  {
-        k: v for k, v in abnormal_pattern_score.items() 
-        if any(str(id_) in k.split('_') for id_ in error_eventids)
-    }
-
-    reuslts_noerror = pattern_ranker_fromscore(patterns_noerror, fault_suffering_event_graphs, log_template_miner, topk)
-    reuslts_error = pattern_ranker_fromscore(patterns_error, fault_suffering_event_graphs, log_template_miner, topk)
-    
-    return reuslts_noerror[0:topk], reuslts_error
 
 def pattern_ranker_fromscore(abnormal_pattern_score, fault_suffering_event_graphs, log_template_miner, topk=10):
     move_list = set()
@@ -266,7 +241,7 @@ def pattern_ranker_fromscore(abnormal_pattern_score, fault_suffering_event_graph
 
     # if many alarm in one service instane, only persistent the deepest one
     move_list = set()
-    alarm_eventids=['184', '92']
+    alarm_eventids=['92', '184', '213']
     for key_pod in deepth_dict.keys():
         pod_events = deepth_dict[key_pod]
             # Filter keys that contain any of the target ids

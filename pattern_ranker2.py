@@ -169,8 +169,8 @@ def get_resultlist(normal_pattern_score, normal_event_graphs, alarm_list):
             mv_flag = False
             for i in range(len(result_list)):
                 item1 = result_list[i]
-                if "resource" in item1.keys():
-                    if item1["pod"] == item["pod"] and item1["resource"] == item["alarm"][0]["metric_type"]:
+                if "resource_alert" in item1.keys():
+                    if item1["pod"] == item["pod"] and item1["resource_alert"] == item["alarm"][0]["metric_type"]:
                         if max_deep > item1["deepth"]:
                             move_list.add(i)
                         elif max_deep == item1["deepth"] and mv_flag == True:
